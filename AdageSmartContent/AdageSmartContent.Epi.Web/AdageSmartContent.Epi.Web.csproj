@@ -329,6 +329,7 @@
     <Content Include="Static-Adage\img\Epi-Thumbs\Page-Home.png" />
     <Content Include="Static-Adage\img\Epi-Thumbs\Page-Mega-Navigation.png" />
     <Content Include="Static-Adage\img\Epi-Thumbs\Page-Site-Settings.png" />
+    <Content Include="Static-Adage\src\denise-styles.css" />
     <Content Include="Static-Adage\src\epimode.css" />
     <Content Include="Static-Adage\src\starter-kit.css" />
     <Content Include="Static-Adage\src\starter-kit.js" />
@@ -454,7 +455,6 @@
     <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
     <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
   </Target>
-  
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
