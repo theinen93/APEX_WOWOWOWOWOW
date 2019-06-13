@@ -1,0 +1,20 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Media
+@using Adage.EpiStarterKit.ModelPartials.Static
+
+@model ContentArea
+
+@foreach (var content in Model.FilteredItemsOrEmpty())
+{
+    var contentData = content.GetContent();
+    if (contentData is ImageFile)
+    {
+        @Html.PropertyFor(m => contentData.ContentLink, "Image")
+
+    }
+    else
+    {
+        @Html.PropertyFor(m => contentData)
+    }
+}

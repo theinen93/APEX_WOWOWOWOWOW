@@ -1,0 +1,26 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using EPiServer.Framework.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+
+<!DOCTYPE html>
+
+<html class="epi-editmode epi-block-preview">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/Static-Adage/src/epimode.css" />
+    @Html.RequiredClientResources("Header")
+</head>
+
+<body>
+    @Html.FullRefreshPropertiesMetaData()
+    @RenderBody()
+
+    <footer>
+        @Html.RequiredClientResources("Footer")
+    </footer>
+
+    <script src="/Static-Adage/src/starter-kit.js"></script>
+</body>
+</html>

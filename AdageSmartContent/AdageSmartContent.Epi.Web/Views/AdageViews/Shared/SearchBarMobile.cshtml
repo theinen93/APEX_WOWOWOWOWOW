@@ -1,0 +1,10 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.BusObj
+
+@model ISiteDataRepository
+
+<form action="@Model.SiteSettingsPage.SearchResultsPage" method="get">
+    <input type="search" placeholder="@Model.SiteSettingsPage.SearchPlaceholderText" required />
+    <input type="submit" value="@Model.SiteSettingsPage.SearchButtonText" />
+</form>

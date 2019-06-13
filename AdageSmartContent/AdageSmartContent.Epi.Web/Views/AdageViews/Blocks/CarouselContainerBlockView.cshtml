@@ -1,0 +1,50 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+@using Adage.EpiStarterKit.ModelPartials.Static
+
+@model IBlockViewModel<CarouselContainerBlock>
+
+
+<section class="adage-block">
+    <div class="adage-gallery">
+        <div class="adage-gallery-inner">
+            @if (!string.IsNullOrWhiteSpace(Model.CurrentBlock.Title) || EPiServer.Editor.PageEditing.PageIsInEditMode)
+            {
+                <h2 class="adage-block-heading adage-gallery-heading" @Html.EditAttributes(m => m.CurrentBlock.Title)>
+                    @Model.CurrentBlock.Title
+                </h2>
+            }
+            @{
+                int index = 0;
+                var carouselItems = Model.CurrentBlock.ImageCarouselContentArea.FilteredItemsOfTypeOrEmpty<CarouselItemBlock>();
+                <div class="adage-gallery-container swiper-container" data-gallery data-unique-id="@Model.CurrentBlock.ContentLinkID" data-total-slides="@carouselItems.Count()" @Html.EditAttributes(m => m.CurrentBlock.ImageCarouselContentArea)>
+                    <div class="swiper-wrapper">
+                        @foreach (var item in carouselItems)
+                        {
+                            index = index + 1;
+                            <div class="adage-gallery-item swiper-slide" data-slide-index="@index">
+                                @Html.PropertyFor(m => item)
+                            </div>
+                        }
+                    </div>
+                    <button type="button" class="adage-gallery-btn-prev swiper-button-prev">
+                        <svg class="svg-icon" aria-hidden="true" focusable="false">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left" />
+                        </svg>
+                        <span class="visually-hidden">Go to previous slide.</span>
+                    </button>
+                    <button type="button" class="adage-gallery-btn-next swiper-button-next">
+                        <svg class="svg-icon" aria-hidden="true" focusable="false">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right" />
+                        </svg>
+                        <span class="visually-hidden">Go to next slide.</span>
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+

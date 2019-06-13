@@ -1,0 +1,29 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+@using Adage.EpiStarterKit.ModelPartials.Static
+
+@model IStaffInfoContainerViewModel
+
+
+<section class="adage-block">
+    <div class="adage-block-inner adage-staff">
+        @if(!string.IsNullOrWhiteSpace(Model.CurrentBlock.Title) || EPiServer.Editor.PageEditing.PageIsInEditMode)
+        {
+            <h2 class="adage-block-heading adage-staff-heading">@Html.PropertyFor(x => x.CurrentBlock.Title)</h2>
+        }
+        <div class="adage-staff-container" @Html.EditAttributes(m => m.CurrentBlock.StaffInfoContentArea)>
+            @foreach(var item in Model.StaffInfoItems)
+            {
+                @Html.Partial("/Views/AdageViews/Shared/StaffInfoItem.cshtml", item)
+            }
+        </div>
+        @if(!string.IsNullOrWhiteSpace(Model.CurrentBlock.CallToAction.LinkText) || EPiServer.Editor.PageEditing.PageIsInEditMode)
+        {
+            <div class="adage-block-level-cta adage-staff-cta@(String.IsNullOrWhiteSpace(Model.CurrentBlock.CallToAction.LinkText) ? " epi-empty-link" : string.Empty)">
+                @Html.PropertyFor(m => m.CurrentBlock.CallToAction, new { CssClass = "btn" })
+            </div>
+        }
+    </div>
+</section>

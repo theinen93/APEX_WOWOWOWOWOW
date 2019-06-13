@@ -1,0 +1,9 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.LibraryPartials.Utility
+
+@model IBaseLinkBlockViewModel<LinkBlock> 
+
+<a href="@Model.CurrentBlock.LinkUrl.GetFriendlyUrl()" target="@Model.TargetFrame" class="@Model.CssClass">@Html.PropertyFor(m => m.CurrentBlock.LinkText)</a>

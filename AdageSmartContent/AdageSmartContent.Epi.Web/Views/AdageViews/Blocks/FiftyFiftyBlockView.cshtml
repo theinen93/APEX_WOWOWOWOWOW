@@ -1,0 +1,78 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+@using Adage.EpiStarterKit.ModelPartials.Static
+@using Adage.EpiStarterKit.ViewModelPartials.LibraryPartials.Static
+
+@model IFiftyFiftyBlockViewModel
+
+<section class="adage-block adage-block-full-bleed">
+    <div class="adage-fiftyfifty">
+        <div class="adage-fiftyfifty-inner@(Model.ReversedOnMobile ? " reversed" : "") ratio-standard">
+            <article class="adage-fiftyfifty-item @(Model.CurrentBlock.LeftBackgroundColors != null ? Model.CurrentBlock.LeftBackgroundColors : "adage-theme-default")" data-full-bleed-image>
+                @{
+                    switch (Model.LeftContentType)
+                    {
+                        case ViewModelEnums.FiftyFiftyContentType.Video:
+                            Html.RenderContentData(Model.CurrentBlock.LeftVideoBlock, false, Adage.EpiStarterKit.RenderingPartials.Tags.FIFTY_FIFTY);
+                            break;
+                        case ViewModelEnums.FiftyFiftyContentType.Image:
+                            @Html.PropertyFor(m => m.CurrentBlock.LeftImageFile)
+                            break;
+                        default:
+                            <div class="adage-wysiwyg-block">
+                                <div class="rich-text">
+                                    @Html.PropertyFor(m => m.CurrentBlock.LeftDescription)
+                                </div>
+                            </div>
+                            break;
+                    }
+                }
+            </article>
+            <article class="adage-fiftyfifty-item @(Model.CurrentBlock.RightBackgroundColors != null ? Model.CurrentBlock.RightBackgroundColors : "adage-theme-default")" data-full-bleed-image>
+                @{
+                    switch (Model.RightContentType)
+                    {
+                        case ViewModelEnums.FiftyFiftyContentType.Video:
+                            Html.RenderContentData(Model.CurrentBlock.RightVideoBlock, false, Adage.EpiStarterKit.RenderingPartials.Tags.FIFTY_FIFTY);
+                            break;
+                        case ViewModelEnums.FiftyFiftyContentType.Image:
+                            @Html.PropertyFor(m => m.CurrentBlock.RightImageFile)
+                            break;
+                        default:
+                            <div class="adage-wysiwyg-block">
+                                <div class="rich-text">
+                                    @Html.PropertyFor(m => m.CurrentBlock.RightDescription)
+                                </div>
+                            </div>
+                            break;
+                    }
+                }
+            </article>
+            @if (Model.ReversedOnMobile)
+            {
+                <article class="adage-fiftyfifty-item @(Model.CurrentBlock.LeftBackgroundColors != null ? Model.CurrentBlock.LeftBackgroundColors : "adage-theme-default")" data-full-bleed-image>
+                    @{
+                        switch (Model.LeftContentType)
+                        {
+                            case ViewModelEnums.FiftyFiftyContentType.Video:
+                                Html.RenderContentData(Model.CurrentBlock.LeftVideoBlock, false, Adage.EpiStarterKit.RenderingPartials.Tags.FIFTY_FIFTY);
+                                break;
+                            case ViewModelEnums.FiftyFiftyContentType.Image:
+                                @Html.PropertyFor(m => m.CurrentBlock.LeftImageFile)
+                                break;
+                            default:
+                                <div class="adage-wysiwyg-block">
+                                    <div class="rich-text">
+                                        @Html.PropertyFor(m => m.CurrentBlock.LeftDescription)
+                                    </div>
+                                </div>
+                                break;
+                        }
+                    }
+                </article>
+            }
+        </div>
+    </div>
+</section>

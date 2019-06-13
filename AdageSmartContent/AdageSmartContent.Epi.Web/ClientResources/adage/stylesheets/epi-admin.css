@@ -1,0 +1,8 @@
+﻿.Sleek .dijitTabPaneWrapper label[title]:after,
+.Sleek .epi-containerLayout label[title]:after {
+    display: block;
+    content: attr(title);
+    font-size: .6rem;
+    line-height: .9rem;
+    margin-top: 5px;
+}

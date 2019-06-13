@@ -1,0 +1,22 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.Pocos
+
+@model IBlockViewModel<AccordionItemBlock>
+
+@{ Layout = "~/Views/AdageViews/Shared/Layouts/_BlockPreview.cshtml"; }
+
+
+<ul class="adage-accordion-inner" aria-label="Accordion Control Group Buttons">
+
+    @{ Html.RenderPartial("/Views/AdageViews/Shared/AccordionItem.cshtml", 
+           new AccordionViewItem { ClientID = "container-1", Content = Model.CurrentBlock.AccordionContent, Title = Model.CurrentBlock.Title }); 
+    }
+</ul>
+
+<script>
+    // expand accordion item by default in on-page editing mode
+    document.querySelector('[aria-hidden]').setAttribute('aria-hidden', false);
+</script>

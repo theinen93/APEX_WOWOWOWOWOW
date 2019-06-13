@@ -1,0 +1,30 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using EPiServer.Framework.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+@using Adage.EpiStarterKit.ModelPartials.BusObj.NavigationObjects
+@using Adage.EpiStarterKit.ViewModelPartials.Pocos
+
+@model AccordionViewItem
+
+<li class="adage-accordion-item">
+    @if (EPiServer.Editor.PageEditing.PageIsInEditMode)
+    {
+        <p class="adage-accordion-trigger" data-epi-property-name="Title">
+            @Model.Title
+        </p>
+    }
+    else
+    {
+        <button class="adage-accordion-trigger" type="button" aria-controls="@Model.ClientID">
+            @Model.Title
+        </button>
+    }
+
+    <div class="adage-accordion-panel" aria-hidden="true" id="@Model.ClientID">
+        <div class="adage-accordion-panel-content rich-text" data-accordion-content-id="@Model.ClientID" data-epi-property-name="AccordionContent">
+            @Html.PropertyFor(m => Model.Content)
+        </div>
+    </div>
+</li>

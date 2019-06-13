@@ -1,0 +1,29 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<FullWidthCTABlock>
+
+<section class="adage-block adage-block-full-bleed">
+    <div class="adage-fwcta @(Model.CurrentBlock.BackgroundColors != null ? Model.CurrentBlock.BackgroundColors : "adage-theme-default")">
+        <div class="adage-fwcta-inner">
+            @if (!String.IsNullOrWhiteSpace(Model.CurrentBlock.Title) || EPiServer.Editor.PageEditing.PageIsInEditMode)
+            {
+                <h2 class="adage-block-heading adage-fwcta-heading">@Html.PropertyFor(m => m.CurrentBlock.Title)</h2>
+            }
+            @if (Model.CurrentBlock.WysiwygContent != null || EPiServer.Editor.PageEditing.PageIsInEditMode)
+            {
+                <div class="rich-text adage-fwcta-content">
+                    @Html.PropertyFor(b => b.CurrentBlock.WysiwygContent)
+                </div>
+            }
+            @if (!String.IsNullOrWhiteSpace(Model.CurrentBlock.CallToAction.GetPropertyValue("LinkText")) || EPiServer.Editor.PageEditing.PageIsInEditMode)
+            {
+                <div class="adage-fwcta-cta@(String.IsNullOrWhiteSpace(Model.CurrentBlock.CallToAction.GetPropertyValue("LinkText")) ? " epi-empty-link" : "")">
+                    @Html.PropertyFor(b => b.CurrentBlock.CallToAction, new { CssClass = "btn" })
+                </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<LogosContainerBlock>
+
+
+<section class="adage-block">
+    <div class="adage-block-inner">
+        <h2>@Html.PropertyFor(b => b.CurrentBlock.Title)</h2>
+
+        <div class="sponsors">
+            @Html.PropertyFor(b => b.CurrentBlock.LogosContentArea)
+        </div>
+    </div>
+</section>

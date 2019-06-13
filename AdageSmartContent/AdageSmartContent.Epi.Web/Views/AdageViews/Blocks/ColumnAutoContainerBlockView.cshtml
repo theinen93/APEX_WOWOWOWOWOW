@@ -1,0 +1,23 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<ColumnAutoContainerBlock>
+
+<section class="adage-block">
+    <div class="adage-block-inner adage-columns-auto">
+        <h2 class="adage-block-heading adage-columns-auto-heading" @Html.EditAttributes(m => m.CurrentBlock.Title)>
+            @Model.CurrentBlock.Title
+        </h2>
+        <div class="adage-columns-auto-container">
+            @Html.PropertyFor(m => m.CurrentBlock.ContentItemArea, new { Tag = Adage.EpiStarterKit.RenderingPartials.Tags.COLUMN_AUTO_CONTAINER })
+        </div>
+        @if (!String.IsNullOrWhiteSpace(Model.CurrentBlock.CallToAction.LinkText)  || EPiServer.Editor.PageEditing.PageIsInEditMode)
+        {
+            <div class="adage-block-level-cta adage-columns-auto-cta@(String.IsNullOrWhiteSpace(Model.CurrentBlock.CallToAction.LinkText) ? " epi-empty-link" : "")">
+                @Html.PropertyFor(m => m.CurrentBlock.CallToAction, new { CssClass = "btn" })
+            </div>
+        }
+    </div>
+</section>

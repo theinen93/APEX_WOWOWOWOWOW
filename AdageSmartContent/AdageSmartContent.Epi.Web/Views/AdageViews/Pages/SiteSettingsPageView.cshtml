@@ -1,0 +1,13 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using System.Configuration
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+
+@model IPageViewModel<SiteSettingsPage>
+
+@{ Layout = ConfigurationManager.AppSettings.Get("ROOT_LAYOUT_LOCATION") ?? "~/Views/AdageViews/Shared/Layouts/_Root.cshtml"; }
+
+<div>
+    Template content would go here
+</div>

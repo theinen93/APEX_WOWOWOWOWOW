@@ -1,0 +1,33 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.BusObj
+
+@model ISiteNavigationRepository
+
+<nav class="nav">
+    @foreach(var linkItem in Model.UtilityNavLinks)
+    {
+        <a href="@Url.PageUrl(linkItem.Href)" target="@linkItem.Target" title="@linkItem.Title">@linkItem.LinkText</a>
+    }
+    @foreach (var navItem in Model.MegaNavItems)
+    {
+        if (navItem.IsMegaNavContainerPage)
+        {
+            <p>@navItem.NavPageData.Name</p>
+            <div>
+                @foreach (var childPage in navItem.MegaNavChildren)
+                {
+                    <p style="padding-left:1em">
+                        <a href="@childPage.LinkURL">@childPage.Name</a>
+                    </p>
+                }
+            </div>
+        }
+        else
+        {
+            <p>
+                <a href="@navItem.NavPageData.LinkURL">@navItem.NavPageData.Name</a>
+            </p>
+        }
+    }
+</nav>

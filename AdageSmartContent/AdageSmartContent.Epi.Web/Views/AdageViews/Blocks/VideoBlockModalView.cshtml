@@ -1,0 +1,68 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IVideoBlockViewModel
+
+@{ 
+    var epimodeMessage = "This block opens a modal containing a video. Video type and source can be edited in the All Properties Panel.";
+}
+
+<section class="adage-block">
+    <figure class="adage-block-inner adage-video-block">
+        <div class="adage-video-thumbnail">
+            <button data-a11y-dialog-show="@Model.ClientID" class="adage-video-thumbnail-trigger" @{if(EPiServer.Editor.PageEditing.PageIsInEditMode) { <text>data-epimode-message="@epimodeMessage"</text> }}>
+                @if (!string.IsNullOrWhiteSpace(Model.CurrentBlock.YouTubeId))
+                {
+                    <img src="https://img.youtube.com/vi/@(Model.CurrentBlock.YouTubeId)/mqdefault.jpg" alt="" />
+                }
+                @if (!string.IsNullOrWhiteSpace(Model.CurrentBlock.VimeoId))
+                {
+                    <img src="http://vimeo.com/api/v2/video/@(Model.CurrentBlock.VimeoId).json?callback=showThumb" alt="" />
+                }
+                @if (!ContentReference.IsNullOrEmpty(Model.CurrentBlock.VideoReference))
+                {
+                    @Html.PropertyFor(m => m.CurrentBlock.PosterImage)
+                }
+                <svg class="svg-icon" aria-hidden="true" focusable="false">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play" />
+                </svg>
+                <span class="visually-hidden">Expand dialog containing embedded video</span>
+            </button>
+        </div>
+        <div id="@Model.ClientID" data-modal class="dialog-container adage-modal-wrapper" aria-hidden="true">
+            <div tabindex="-1" data-a11y-dialog-hide class="adage-modal-overlay"></div>
+            <div role="dialog" aria-labelledby="dialog-title-@Model.ClientID" class="adage-modal-dialog">
+                <button type="button" data-a11y-dialog-hide aria-label="Close this dialog" class="adage-modal-close"></button>
+                <div class="adage-modal-inner adage-modal-inner-full-bleed">
+                    <h1 id="dialog-title-@Model.ClientID" class="visually-hidden">@(Model.CurrentBlock.TitleTag)</h1>
+                    @if (!ContentReference.IsNullOrEmpty(Model.CurrentBlock.VideoReference))
+                    {
+                        <div class="adage-video-native" data-video-type="native">
+                            <video controls title="@Model.CurrentBlock.TitleTag">
+                                <source data-src="@Url.ContentUrl(Model.CurrentBlock.VideoReference)" type="video/mp4">
+                            </video>
+                        </div>
+                    }
+
+                    <!--note that in a modal, these video embeds need to have data-src instead of src-->
+                    @if (!string.IsNullOrWhiteSpace(Model.CurrentBlock.VimeoId))
+                    {
+                        <div class="adage-video-iframe" data-video-type="vimeo">
+                            <iframe width="640" height="360" data-src="https://player.vimeo.com/video/@(Model.CurrentBlock.VimeoId)" frameborder="0" allowfullscreen title="@(Model.CurrentBlock.TitleTag)"></iframe>
+                        </div>
+                    }
+
+                    @if (!string.IsNullOrWhiteSpace(Model.CurrentBlock.YouTubeId))
+                    {
+                        <div class="adage-video-iframe" data-video-type="youtube">
+                            <iframe width="640" height="360" data-src="https://www.youtube.com/embed/@(Model.CurrentBlock.YouTubeId)?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen title="@(Model.CurrentBlock.TitleTag)"></iframe>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </figure>
+</section>

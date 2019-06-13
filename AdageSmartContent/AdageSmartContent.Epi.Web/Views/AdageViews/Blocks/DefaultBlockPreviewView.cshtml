@@ -1,0 +1,10 @@
+﻿@using EPiServer.Web.Mvc.Html
+@using EPiServer.Framework.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<AdageBaseBlock>
+
+@{ Layout = "~/Views/AdageViews/Shared/Layouts/_BlockPreview.cshtml"; }
+
+@{Html.RenderContentData(Model.CurrentBlock, true, EPiServer.Framework.Web.RenderingTags.Preview); }

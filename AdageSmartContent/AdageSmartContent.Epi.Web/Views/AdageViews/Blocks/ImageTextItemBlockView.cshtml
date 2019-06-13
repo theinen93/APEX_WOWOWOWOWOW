@@ -1,0 +1,19 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<ImageTextItemBlock>
+
+<article class="adage-listing-item">
+    <div class="adage-listing-item-image">
+        <div class="adage-listing-item-image-inner ratio-wide" data-full-bleed-image>
+            @Html.PropertyFor(m => m.CurrentBlock.Image)
+        </div>
+    </div>
+    <div class="adage-listing-item-content">
+        <div class="rich-text">
+            @Html.PropertyFor(m => m.CurrentBlock.WysiwygContent)
+        </div>
+    </div>
+</article>

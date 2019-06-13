@@ -1,0 +1,19 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using EPiServer.Framework.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+
+@model IPageViewModel<PageData>
+
+
+<div class="header-nav">
+    <a href="/">
+        <img class="header-nav-logo" src="@Url.ContentUrl(Model.SiteDataRepository.SiteSettingsPage.Logo.Image)" />
+    </a>
+    <p>
+        Mobile Nav
+    </p>
+    @{ Html.RenderAction("RenderMegaNavMobile", "SiteSettingsPage"); }
+    @{ Html.RenderAction("RenderSearchMobile", "SiteSettingsPage"); }
+</div>

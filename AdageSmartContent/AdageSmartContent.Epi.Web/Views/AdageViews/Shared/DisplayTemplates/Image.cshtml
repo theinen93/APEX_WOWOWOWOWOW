@@ -1,0 +1,18 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using EPiServer
+@using Adage.EpiStarterKit.ModelPartials.Models.Media
+
+@model ContentReference
+
+@* This file exists to override the default image renderer. It is installed as part of Adage.Epi.SharedTemplates. *@
+
+@if (!ContentReference.IsNullOrEmpty(Model))
+{
+    var contentRepository = EPiServer.ServiceLocation.ServiceLocator.Current.GetInstance<IContentRepository>();
+    var imageData = contentRepository.Get<ImageFile>(Model);
+    if (imageData != null)
+    {
+        <img src="@Url.ContentUrl(Model)" alt="@imageData.AltText" class="@ViewData["cssClass"]" />
+    }
+}

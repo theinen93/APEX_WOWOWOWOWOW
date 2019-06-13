@@ -1,0 +1,1 @@
+﻿This is the Adage Views folder. By default, the controllers will pick up views from here. 

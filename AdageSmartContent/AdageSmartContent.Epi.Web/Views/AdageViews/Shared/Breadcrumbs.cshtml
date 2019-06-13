@@ -1,0 +1,33 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using EPiServer.Framework.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+@using Adage.EpiStarterKit.ModelPartials.BusObj.NavigationObjects
+
+@model List<LinkItem>
+
+@if (Model != null)
+{
+    for (int i = 0; i < Model.Count; i++)
+    {
+        if (i != Model.Count - 1)
+        {
+            if (Model[i].Active)
+            {
+                <a class="" href="@Model[i].Href" title="@Model[i].Title">@Model[i].LinkText</a><span> > </span>
+            }
+            else
+            {
+                <span>@Model[i].LinkText > </span>
+            }
+        }
+        else
+        {
+            <span>@Model[i].LinkText</span>
+        }
+    }
+
+}
+
+

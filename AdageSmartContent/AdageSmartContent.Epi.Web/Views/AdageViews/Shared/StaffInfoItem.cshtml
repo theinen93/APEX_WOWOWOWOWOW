@@ -1,0 +1,27 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.Pocos
+
+@model StaffInfoViewItem
+
+<article class="adage-staff-item">
+    @if (!Model.HideImage)
+    {
+        <div class="adage-staff-item-img">
+            @Html.PropertyFor(m => m.StaffImage)
+        </div>
+    }
+    <div class="adage-staff-item-content">
+        <h3 class="adage-staff-item-title">
+            @Html.PropertyFor(m => m.StaffName)
+        </h3>
+        <h4 class="adage-staff-item-role">
+            @Html.PropertyFor(m => m.StaffRole)
+        </h4>
+        <div class="rich-text adage-staff-item-info">
+            @Html.PropertyFor(m => m.StaffInfo)
+        </div>
+    </div>
+</article>

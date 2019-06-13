@@ -1,0 +1,90 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using EPiServer.Framework.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+
+@model IPageViewModel<PageData>
+
+<!DOCTYPE html>
+<html>
+<head prefix="og: http://ogp.me/ns#">
+    @if (!string.IsNullOrEmpty(Model.MetaTitle))
+    {
+        <meta property="og:title" content="@Model.MetaTitle" />
+    }
+    @if (!string.IsNullOrEmpty(Model.OGUrl))
+    {
+        <meta property="og:url" content="@Model.OGUrl" />
+    }
+    @if (!string.IsNullOrEmpty(Model.OGDescription))
+    {
+        <meta property="og:description" content="@Model.OGDescription" />
+    }
+    @if (!string.IsNullOrEmpty(Model.OGImage))
+    {
+        <meta property="og:image" content="@Model.OGImage" />
+    }
+    @if (!string.IsNullOrEmpty(Model.FacebookAppId))
+    {
+        <meta property="fb:app_id" content="@Model.FacebookAppId" />
+    }
+    
+    <title>@Model.MetaTitle</title>
+
+    @if (!string.IsNullOrEmpty(Model.SEODescription))
+    {
+        <meta name="description" content="@Model.SEODescription" />
+    }
+    @if (!string.IsNullOrEmpty(Model.SEOKeywords))
+    {
+        <meta name="keywords" content="@Model.SEOKeywords" />
+    }
+    @if (!string.IsNullOrEmpty(Model.SEORobots))
+    {
+        <meta name="robots" content="@Model.SEORobots" />
+    }
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/Static-Adage/src/starter-kit.css" />
+    @if(EPiServer.Editor.PageEditing.PageIsInEditMode)
+    {
+        <link rel="stylesheet" type="text/css" href="/Static-Adage/src/epimode.css" />
+    }
+
+    @Html.RequiredClientResources("Header")
+
+    @Html.Raw(Model.SiteDataRepository.SiteSettingsPage.GlobalHeadScripts)
+    @if (!string.IsNullOrEmpty(Model.Script))
+    {
+        @Html.Raw(Model.Script)
+    }
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    @Html.RenderEPiServerQuickNavigator()
+    @Html.FullRefreshPropertiesMetaData()
+    <header class="header" role="banner">
+        @Html.Partial("/Views/AdageViews/Shared/Header.cshtml", Model)
+        @Html.Partial("/Views/AdageViews/Shared/HeaderMobile.cshtml", Model)
+    </header>
+    <main id="main">
+        @RenderBody()
+    </main>
+    <footer>
+        @Html.RequiredClientResources("Footer")
+        @Html.Partial("/Views/AdageViews/Shared/Footer.cshtml", Model)
+    </footer>
+    <script src="/Static-Adage/src/starter-kit.js"></script>
+
+    <script type="text/javascript">
+        var epiEditMode = @EPiServer.Editor.PageEditing.PageIsInEditMode.ToString().ToLower();
+        if (epiEditMode) {
+            document.querySelector('html').classList.add('epi-editmode');
+        }
+    </script>
+
+    @Html.Raw(Model.SiteDataRepository.SiteSettingsPage.GlobalBodyScripts)
+
+</body>
+</html>

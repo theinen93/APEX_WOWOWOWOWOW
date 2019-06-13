@@ -1,0 +1,30 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<ContentHighlightItemBlock>
+
+<article class="adage-highlight-item">
+    @if (Model.CurrentBlock.LinkBlock != null || EPiServer.Editor.PageEditing.PageIsInEditMode)
+    {
+        @Html.Raw("<a class=\"adage-highlight-item-clickable\" href=\"" + Model.CurrentBlock.LinkBlock.GetPropertyValue("LinkUrl") + "\" target=\"" + Model.CurrentBlock.LinkBlock.GetPropertyValue("TargetFrame") + "\">")
+    }
+    <div class="adage-highlight-item-content">
+        <div class="adage-highlight-item-image">
+            @Html.PropertyFor(m => m.CurrentBlock.ImageBlock)
+        </div>
+        <div class="adage-highlight-item-details">
+            @*<h3 class="adage-highlight-item-title">@Html.PropertyFor(m => m.CurrentBlock.Title)</h3>*@
+            @Html.PropertyFor(m => m.CurrentBlock.TextArea)
+        </div>
+    </div>
+    @if (Model.CurrentBlock.LinkBlock != null || EPiServer.Editor.PageEditing.PageIsInEditMode)
+    {
+        <div class="adage-highlight-item-cta">
+            <span class="btn-text" data-epi-property-name="LinkText">@Model.CurrentBlock.LinkBlock.GetPropertyValue("LinkText")</span>
+        </div>
+
+        @Html.Raw("</a>")
+    }
+</article>

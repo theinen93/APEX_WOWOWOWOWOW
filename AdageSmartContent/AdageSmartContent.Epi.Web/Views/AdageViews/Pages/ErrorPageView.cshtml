@@ -1,0 +1,34 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using System.Configuration
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+
+
+@model IErrorPageViewModel
+
+@{ Layout = ConfigurationManager.AppSettings.Get("ROOT_LAYOUT_LOCATION") ?? "~/Views/AdageViews/Shared/Layouts/_Root.cshtml"; }
+
+<div class="rich-text">
+    @switch (Model.ErrorCode)
+    {
+        case 400:
+            @Html.PropertyFor(m => m.CurrentPage.Code400WYSIWYG)
+            break;
+        case 401:
+            @Html.PropertyFor(m => m.CurrentPage.Code401WYSIWYG)
+            break;
+        case 403:
+            @Html.PropertyFor(m => m.CurrentPage.Code403WYSIWYG)
+            break;
+        case 404:
+            @Html.PropertyFor(m => m.CurrentPage.Code404WYSIWYG)
+            break;
+        case 500:
+            @Html.PropertyFor(m => m.CurrentPage.Code500WYSIWYG)
+            break;
+        default:
+            @Html.PropertyFor(m => m.CurrentPage.GeneralErrorWYSIWYG)
+            break;
+    }
+</div>

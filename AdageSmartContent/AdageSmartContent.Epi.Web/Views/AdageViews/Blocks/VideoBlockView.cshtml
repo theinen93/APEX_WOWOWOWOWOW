@@ -1,0 +1,40 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IVideoBlockViewModel
+
+@{
+    var epimodeMessage = "Video type and source for this Video Block can be edited in the All Properties Panel.";
+}
+
+<section class="adage-block">
+    <figure class="adage-block-inner adage-video-block">
+        @{
+            if (!ContentReference.IsNullOrEmpty(Model.CurrentBlock.VideoReference))
+            {
+                
+                <div class="adage-video-native" data-video-type="native" @{if(EPiServer.Editor.PageEditing.PageIsInEditMode) { <text>data-epimode-message="@epimodeMessage"</text> }}>
+                    <video controls title="@Model.CurrentBlock.TitleTag">
+                        <source src="@Url.ContentUrl(Model.CurrentBlock.VideoReference)" type="video/mp4">
+                    </video>
+                </div>
+            }
+
+            if (!string.IsNullOrWhiteSpace(Model.CurrentBlock.VimeoId))
+            {
+                <div class="adage-video-iframe" @{if(EPiServer.Editor.PageEditing.PageIsInEditMode) { <text>data-epimode-message="@epimodeMessage"</text> }}>
+                    <iframe width="640" height="360" src="https://player.vimeo.com/video/@(Model.CurrentBlock.VimeoId)" frameborder="0" allowfullscreen title="@(Model.CurrentBlock.TitleTag)"></iframe>
+                </div>
+            }
+
+            if (!string.IsNullOrWhiteSpace(Model.CurrentBlock.YouTubeId))
+            {
+                <div class="adage-video-iframe" @{if(EPiServer.Editor.PageEditing.PageIsInEditMode) { <text>data-epimode-message="@epimodeMessage"</text> }}>
+                    <iframe width="640" height="360" src="https://www.youtube.com/embed/@(Model.CurrentBlock.YouTubeId)?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen title="@(Model.CurrentBlock.TitleTag)"></iframe>
+                </div>
+            }
+        }
+    </figure>
+</section>

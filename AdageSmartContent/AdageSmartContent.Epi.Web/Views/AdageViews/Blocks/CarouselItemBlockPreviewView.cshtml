@@ -1,0 +1,44 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<CarouselItemBlock>
+
+@{ Layout = "~/Views/AdageViews/Shared/Layouts/_BlockPreview.cshtml"; }
+
+
+<p class="epimode-message">
+    Media type (image, YouTube, Vimeo, uploaded video) can be changed by editing the fields in the All Properties Panel.
+</p>
+
+<section class="adage-block">
+    <div class="adage-gallery">
+        <div class="adage-gallery-inner">
+
+
+            <div class="adage-gallery-container swiper-container" data-gallery data-unique-id="1" data-total-slides="1">
+                <div class="swiper-wrapper">
+                    <div class="adage-gallery-item swiper-slide" data-slide-index="1">
+                        @{Html.RenderContentData(Model.CurrentBlock, true, EPiServer.Framework.Web.RenderingTags.Preview); }
+                    </div>
+                </div>
+                <button type="button" class="adage-gallery-btn-prev swiper-button-prev">
+                    <svg class="svg-icon" aria-hidden="true" focusable="false">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left" />
+                    </svg>
+                    <span class="visually-hidden">Go to previous slide.</span>
+                </button>
+                <button type="button" class="adage-gallery-btn-next swiper-button-next">
+                    <svg class="svg-icon" aria-hidden="true" focusable="false">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right" />
+                    </svg>
+                    <span class="visually-hidden">Go to next slide.</span>
+                </button>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>

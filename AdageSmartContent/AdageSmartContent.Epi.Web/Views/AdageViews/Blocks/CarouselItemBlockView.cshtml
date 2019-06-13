@@ -1,0 +1,66 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<CarouselItemBlock>
+
+@if (!ContentReference.IsNullOrEmpty(Model.CurrentBlock.ImageFile))
+{
+    <figure class="adage-image-block">
+        @Html.PropertyFor(m => m.CurrentBlock.ImageFile)
+
+        <figcaption class="adage-gallery-item-caption">
+            <div class="adage-gallery-item-caption-page">
+                <p data-gallery-page></p>
+            </div>
+            @if (Model.CurrentBlock.ImageCaption != null)
+            {
+                <div class="adage-gallery-item-caption-details rich-text">
+                    @Html.PropertyFor(m => m.CurrentBlock.ImageCaption)
+                </div>
+            }
+        </figcaption>
+    </figure>
+}
+else
+{
+    <figure class="adage-block-inner adage-video-block">
+
+        @if (!ContentReference.IsNullOrEmpty(Model.CurrentBlock.VideoReference))
+        {
+            <div class="adage-video-native" data-video-type="native">
+                <video controls title="@Model.CurrentBlock.ContentName">
+                    <source data-src="@Url.ContentUrl(Model.CurrentBlock.VideoReference)" type="video/mp4">
+                </video>
+            </div>
+        }
+        <!--note that in a gallery, these video embeds need to have data-src instead of src-->
+        @if (!string.IsNullOrWhiteSpace(Model.CurrentBlock.VimeoId))
+        {
+            <div class="adage-video-iframe" data-unique-id="@Model.CurrentBlock.ContentLinkID" data-video-type="vimeo">
+                <iframe width="640" height="360" data-src="https://player.vimeo.com/video/@(Model.CurrentBlock.VimeoId)" frameborder="0" allowfullscreen title="@Model.CurrentBlock.ContentName"></iframe>
+            </div>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(Model.CurrentBlock.YouTubeId))
+        {
+            <div class="adage-video-iframe" data-unique-id="@Model.CurrentBlock.ContentLinkID" data-video-type="youtube">
+                <iframe width="640" height="360" data-src="https://www.youtube.com/embed/@(Model.CurrentBlock.YouTubeId)?rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen title="@Model.CurrentBlock.ContentName"></iframe>
+            </div>
+        }
+
+        <figcaption class="adage-gallery-item-caption">
+            <div class="adage-gallery-item-caption-page">
+                <p data-gallery-page></p>
+            </div>
+            @if (Model.CurrentBlock.ImageCaption != null)
+            {
+                <div class="adage-gallery-item-caption-details rich-text">
+                    @Html.PropertyFor(m => m.CurrentBlock.ImageCaption)
+                </div>
+            }
+        </figcaption>
+    </figure>
+}
+

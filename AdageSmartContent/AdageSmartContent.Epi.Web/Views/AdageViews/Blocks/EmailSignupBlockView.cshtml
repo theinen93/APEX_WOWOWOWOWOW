@@ -1,0 +1,34 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<EmailSignupBlock>
+
+<section class="adage-block adage-block-full-bleed">
+    <div class="adage-newsletter-signup @(Model.CurrentBlock.BackgroundColors != null ? Model.CurrentBlock.BackgroundColors : "adage-theme-default")">
+        <div class="adage-newsletter-signup-inner">
+            @if (!String.IsNullOrWhiteSpace(Model.CurrentBlock.Title) || EPiServer.Editor.PageEditing.PageIsInEditMode)
+            {
+                <h2>@Html.PropertyFor(b => b.CurrentBlock.Title)</h2>
+            }
+            @if (Model.CurrentBlock.WysiwygContent != null || EPiServer.Editor.PageEditing.PageIsInEditMode)
+            {
+                <div class="rich-text adage-newsletter-signup-description">
+                    @Html.PropertyFor(b => b.CurrentBlock.WysiwygContent)
+                </div>
+            }
+            <form action="@Model.CurrentBlock.CallToAction.LinkUrl" method="post" class="adage-form">
+                <div class="adage-form-row">
+                    <div class="adage-form-item adage-newsletter-signup-form-item">
+                        <label for="signup-input-@(Model.CurrentBlock.ContentLinkID)">
+                            @Html.PropertyFor(b => b.CurrentBlock.TextBoxTitle)
+                        </label>
+                        <input type="email" id="signup-input-@(Model.CurrentBlock.ContentLinkID)" placeholder="@Model.CurrentBlock.PlaceholderText" name="email" required />
+                        <input type="submit" class="btn" value="@Model.CurrentBlock.CallToAction.LinkText">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

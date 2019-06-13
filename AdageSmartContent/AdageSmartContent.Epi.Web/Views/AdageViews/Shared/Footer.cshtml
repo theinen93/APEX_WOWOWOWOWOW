@@ -1,0 +1,64 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using EPiServer.Framework.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+
+@model IPageViewModel<PageData>
+
+<footer class="page-footer">
+    <section class="page-footer-inner footer-top">
+        <div class="footer-top-inner">
+            <div class="footer-block">
+                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.LeftWYSIWYG)
+            </div>
+            <div class="footer-block">
+                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.LeftCenterWYSIWYG)
+            </div>
+            <div class="footer-block">
+                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.RightCenterWYSIWYG)
+            </div>
+            <div class="footer-block">
+                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.RightWYSIWYG)
+                <div class="social-media-container">
+                    <ul class="social-media">
+                        <li>
+                            <a href="@Model.SiteDataRepository.SiteSettingsPage.TwitterUrl">
+                                <svg class="svg-icon" aria-hidden="true" focusable="false">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter" />
+                                </svg>
+                                <span class="visually-hidden">Twitter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Model.SiteDataRepository.SiteSettingsPage.FacebookUrl">
+                                <svg class="svg-icon" aria-hidden="true" focusable="false">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook" />
+                                </svg>
+                                <span class="visually-hidden">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Model.SiteDataRepository.SiteSettingsPage.InstagramUrl">
+                                <svg class="svg-icon" aria-hidden="true" focusable="false">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram" />
+                                </svg>
+                                <span class="visually-hidden">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="page-footer-inner footer-bottom">
+        <div class="copyright">
+            <p @Html.EditAttributes(m => m.SiteDataRepository.SiteSettingsPage.CopyrightText)>@Model.SiteDataRepository.SiteSettingsPage.CopyrightText</p>
+        </div>
+        <div class="user-info-links">
+            @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.FooterLinkArea)
+        </div>
+    </section>
+</footer>

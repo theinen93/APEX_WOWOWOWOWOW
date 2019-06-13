@@ -1,0 +1,15 @@
+﻿
+@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using Adage.EpiStarterKit.ModelPartials.Models.Blocks
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Blocks
+
+@model IBlockViewModel<WysiwygBlock>
+
+<section class="adage-block">
+    <div class="adage-block-inner adage-wysiwyg-block">
+        <div class="rich-text">
+            @Html.PropertyFor(b => b.CurrentBlock.WysiwygContent)
+        </div>
+    </div>
+</section>
