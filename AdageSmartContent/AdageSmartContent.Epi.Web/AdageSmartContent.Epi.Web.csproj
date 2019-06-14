@@ -277,10 +277,6 @@
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\EPiServerDB_09e47fbb.mdf" />
-    <Content Include="App_Data\EPiServerDB_09e47fbb_log.ldf">
-      <DependentUpon>EPiServerDB_09e47fbb.mdf</DependentUpon>
-    </Content>
     <Content Include="App_Readme\Elmah.txt" />
     <Content Include="ClientResources\adage\stylesheets\epi-admin.css" />
     <Content Include="Controllers\Adage.EpiStarterKit.ControllerPartials\ClientPartials\ReadMe.txt" />

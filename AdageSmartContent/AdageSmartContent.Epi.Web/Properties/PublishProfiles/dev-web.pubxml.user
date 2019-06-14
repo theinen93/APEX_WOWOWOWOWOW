@@ -16,34 +16,34 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 17:32:58</publishTime>
     </File>
     <File Include="App_Data/GeoLiteCity.dat">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="App_Readme/Elmah.txt">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Models.dll">
-      <publishTime>06/14/2019 10:43:35</publishTime>
+      <publishTime>06/14/2019 10:51:10</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Models.dll.config">
-      <publishTime>06/13/2019 16:50:27</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Models.pdb">
-      <publishTime>06/14/2019 10:43:35</publishTime>
+      <publishTime>06/14/2019 10:51:10</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.ViewModels.dll">
-      <publishTime>06/14/2019 10:43:36</publishTime>
+      <publishTime>06/14/2019 10:51:11</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.ViewModels.dll.config">
-      <publishTime>06/13/2019 16:50:28</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.ViewModels.pdb">
-      <publishTime>06/14/2019 10:43:36</publishTime>
+      <publishTime>06/14/2019 10:51:11</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Web.dll">
-      <publishTime>06/14/2019 10:44:15</publishTime>
+      <publishTime>06/14/2019 10:51:18</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Web.pdb">
-      <publishTime>06/14/2019 10:44:15</publishTime>
+      <publishTime>06/14/2019 10:51:18</publishTime>
     </File>
     <File Include="bin/BVNetwork.EPi404.dll">
       <publishTime>12/20/2018 09:27:38</publishTime>
@@ -352,328 +352,328 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/28/2015 04:04:30</publishTime>
     </File>
     <File Include="ClientResources/adage/stylesheets/epi-admin.css">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Controllers/Adage.EpiStarterKit.ControllerPartials/ClientPartials/ReadMe.txt">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Initialization/Adage.EpiStarterKit.InitializationPartials/ClientPartials/ReadMe.txt">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="module.config">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/css/chosen.css">
-      <publishTime>06/13/2019 16:55:07</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/css/loading.css">
-      <publishTime>06/13/2019 16:55:07</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/css/style.css">
-      <publishTime>06/13/2019 16:55:07</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/img/chosen-sprite%402x.png">
-      <publishTime>06/13/2019 16:55:07</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/img/chosen-sprite.png">
-      <publishTime>06/13/2019 16:55:07</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/img/loading-icon.png">
-      <publishTime>06/13/2019 16:55:07</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/js/chosen.jquery.js">
-      <publishTime>06/13/2019 16:55:07</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/js/chosen.proto.js">
-      <publishTime>06/13/2019 16:55:07</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/js/init.js">
-      <publishTime>06/13/2019 16:55:07</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/js/init.proto.js">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ClientResources/js/loading.js">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/GatherContentConfigSetup.aspx">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/GcEpiTemplateMappings.aspx">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/NewGcMappingStep1.aspx">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/NewGcMappingStep2.aspx">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/NewGcMappingStep3.aspx">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/NewGcMappingStep4.aspx">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/ReviewItemsForImport.aspx">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/GcEpiPlugin/SelectParent.aspx">
-      <publishTime>06/13/2019 16:55:06</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/Geta.SEO.Sitemaps/AdminManageSitemap.aspx">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/_protected/BVNetwork.404Handler/BVNetwork.404Handler.zip">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/_protected/CMS/CMS.zip">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/_protected/CMS/web.config">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/_protected/EPiServer.Cms.AddOns.Blocks/EPiServer.Cms.AddOns.Blocks.zip">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/_protected/EPiServer.Cms.AddOns.Blocks/module.config">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/_protected/EPiServer.Cms.TinyMce/EPiServer.Cms.TinyMce.zip">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/_protected/EPiServer.Cms.TinyMce/web.config">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/_protected/Shell/Shell.zip">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="modules/_protected/Shell/web.config">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="NotFound.aspx">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Rendering/Adage.EpiStarterKit.RenderingPartials/ClientPartials/ReadMe.txt">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/adage-sprite.svg">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Accordion-Container.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Accordion-Item.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Email-Sign-Up.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Fifty-Fifty-Container.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Full-Width-CTA.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Gallery-Container.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Highlight-Container.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Highlight-Item.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Image-Text-List-Container.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Image-Text-List.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Image.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Staff-Info-Container.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Staff-Info.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-Video.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Block-WYSIWYG.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Page-Container.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Page-Error.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Page-General-Content.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Page-Home.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Page-Mega-Navigation.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/img/Epi-Thumbs/Page-Site-Settings.png">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/src/denise-styles.css">
-      <publishTime>06/13/2019 18:45:37</publishTime>
+      <publishTime>06/14/2019 07:26:27</publishTime>
     </File>
     <File Include="Static-Adage/src/epimode.css">
-      <publishTime>06/14/2019 10:43:03</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/src/starter-kit.css">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Static-Adage/src/starter-kit.js">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/AccordionContainerBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/AccordionItemBlockPreviewView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/CarouselContainerBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/CarouselItemBlockPreviewView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/CarouselItemBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/ColumnAutoContainerBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/ContentHighlightItemBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/DefaultBlockPreviewView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/EmailSignupBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/FiftyFiftyBlockPreviewView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/FiftyFiftyBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/FullWidthCTABlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/ImageBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/ImageTextContainerBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/ImageTextItemBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/LinkBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/LogosContainerBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/StaffInfoContainerBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/StaffInfoItemBlockPreviewView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/VideoBlockModalView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/VideoBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/WysiwygBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Pages/ContentPageView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Pages/ErrorPageView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Pages/HomePageView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Pages/SiteSettingsPageView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/ReadMe.txt">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/AccordionItem.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/Breadcrumbs.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/DisplayTemplates/ContentArea.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/DisplayTemplates/Image.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/Footer.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/Header.cshtml">
-      <publishTime>06/14/2019 10:43:03</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/HeaderMobile.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/Layouts/_BlockPreview.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/Layouts/_Root.cshtml">
-      <publishTime>06/14/2019 10:43:03</publishTime>
+      <publishTime>06/14/2019 07:26:27</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/MegaNav.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/MegaNavMobile.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/SearchBar.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/SearchBarMobile.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/StaffInfoItem.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/ClientViews/Pages/ArticleDetailsPageView.cshtml">
-      <publishTime>06/13/2019 20:12:34</publishTime>
+      <publishTime>06/14/2019 08:36:10</publishTime>
     </File>
     <File Include="Views/ClientViews/Pages/EventDetailsPageView.cshtml">
-      <publishTime>06/14/2019 10:43:13</publishTime>
+      <publishTime>06/14/2019 08:39:35</publishTime>
     </File>
     <File Include="Views/ClientViews/ReadMe.txt">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/13/2019 18:16:46</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/14/2019 08:17:49</publishTime>
+      <publishTime>06/14/2019 10:51:18</publishTime>
     </File>
   </ItemGroup>
 </Project>
