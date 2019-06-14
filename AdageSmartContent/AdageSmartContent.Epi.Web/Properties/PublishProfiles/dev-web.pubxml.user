@@ -682,7 +682,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 16:50:30</publishTime>
     </File>
     <File Include="Views/ClientViews/Pages/ArticleDetailsPageView.cshtml">
-      <publishTime>06/13/2019 20:12:34</publishTime>
+      <publishTime>06/14/2019 12:31:38</publishTime>
     </File>
     <File Include="Views/ClientViews/Pages/EventDetailsPageView.cshtml">
       <publishTime>06/14/2019 11:51:09</publishTime>
