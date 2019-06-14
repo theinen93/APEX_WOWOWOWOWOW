@@ -5,3 +5,27 @@
 .adage-hero-block{
     margin-bottom: 4rem;
 }
+
+.adage-block > .adage-block-inner {
+    padding: 0 4rem;
+}
+
+@media screen and (max-width: 64em) {
+    .adage-block > .adage-block-inner {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .adage-block > .adage-block-inner {
+        padding: 0 2rem;
+    }
+}
+
+.right-rail {
+    float: right;
+    min-width: 18.75rem;
+    height: 100vh;
+    margin-left: 2rem;
+    margin-right: 6rem;
+}

@@ -24,6 +24,33 @@
         </div>
     </section>
     <section class="adage-block adage-wysiwyg-block-container">
+        <div class="right-rail">
+            <h4>
+                Date and Time
+            </h4>
+
+            <p>
+                @Html.PropertyFor(m => m.CurrentPage.DateAndTime)
+            </p>
+            <br />
+
+            <h4>
+                Location Name & Address
+            </h4>
+            <div>
+                @Html.PropertyFor(m => m.CurrentPage.LocationNameAndAddress)
+            </div>
+
+            <div>
+                @Html.PropertyFor(m => m.CurrentPage.Price)
+            </div>
+
+            <div>
+                <a href="@Model.CurrentPage.CTAButtonUrl">
+                    @Html.PropertyFor(m => m.CurrentPage.CTAButtonText)
+                </a>
+            </div>
+        </div>
         <div class="adage-block-inner adage-wysiwyg-block">
             <div class="rich-text">
                 @Html.PropertyFor(m => m.CurrentPage.Description)
@@ -32,24 +59,6 @@
         </div>
     </section>
 
-    <div style="float:right;">
-        <p>
-            @Html.PropertyFor(m => m.CurrentPage.DateAndTime)
-        </p>
-
-        <div>
-            @Html.PropertyFor(m => m.CurrentPage.LocationNameAndAddress)
-        </div>
-
-        <div>
-            @Html.PropertyFor(m => m.CurrentPage.Price)
-        </div>
-
-        <div>
-            <a href="@Model.CurrentPage.CTAButtonUrl">
-                @Html.PropertyFor(m => m.CurrentPage.CTAButtonText)
-            </a>
-        </div>
-    </div>
+   
 
 </div>
