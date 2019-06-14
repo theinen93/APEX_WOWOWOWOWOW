@@ -5,7 +5,7 @@
 
 @model IBlockViewModel<ContentHighlightItemBlock>
 
-<article class="adage-highlight-item">
+<article class="adage-highlight-item" style="text-align:center">
     @if (Model.CurrentBlock.LinkBlock != null || EPiServer.Editor.PageEditing.PageIsInEditMode)
     {
         @Html.Raw("<a class=\"adage-highlight-item-clickable\" href=\"" + Model.CurrentBlock.LinkBlock.GetPropertyValue("LinkUrl") + "\" target=\"" + Model.CurrentBlock.LinkBlock.GetPropertyValue("TargetFrame") + "\">")
