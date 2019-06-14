@@ -176,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adage.EpiStarterKit.ModelPartials\ClientPartials\Models\Pages\ArticleDetailsPage.cs" />
+    <Compile Include="Adage.EpiStarterKit.ModelPartials\ClientPartials\Models\Pages\EventDetailsPage.cs" />
     <Compile Include="Adage.EpiStarterKit.ModelPartials\LibraryPartials\BusObj\ISiteDataRepository.cs" />
     <Compile Include="Adage.EpiStarterKit.ModelPartials\LibraryPartials\BusObj\ISiteNavigationRepository.cs" />
     <Compile Include="Adage.EpiStarterKit.ModelPartials\LibraryPartials\BusObj\NavigationObjects\LinkItem.cs" />

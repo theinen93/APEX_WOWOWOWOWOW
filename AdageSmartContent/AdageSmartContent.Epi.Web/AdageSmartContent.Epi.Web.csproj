@@ -399,11 +399,14 @@
     <Content Include="Views\AdageViews\Blocks\CarouselContainerBlockView.cshtml" />
     <Content Include="Views\AdageViews\Blocks\AccordionItemBlockPreviewView.cshtml" />
     <Content Include="Views\AdageViews\Blocks\AccordionContainerBlockView.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <Content Include="Views\AdageViews\Pages\ArticleDetailsPage.cshtml" />
     <Content Include="Views\ClientViews\Pages\ArticleDetailsPageView.cshtml" />
     <None Include="Properties\PublishProfiles\dev-web.pubxml" />
     <Content Include="Static-Adage\src\main.css.map" />
     <Content Include="Static-Adage\src\epimode.css.map" />
     <Content Include="Static-Adage\src\esk-base.css.map" />
+    <Content Include="Views\ClientViews\Pages\EventDetailsPageView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

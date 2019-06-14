@@ -1,0 +1,45 @@
+﻿ing EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using System.Configuration
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+
+@model IPageViewModel<EventDetailsPage>
+
+@{ Layout = ConfigurationManager.AppSettings.Get("ROOT_LAYOUT_LOCATION") ?? "~/Views/AdageViews/Shared/Layouts/_Root.cshtml"; }
+
+@{
+    Html.RenderAction("RenderBreadcrumbs", "SiteSettingsPage", new { page = Model.CurrentPage });
+}
+
+<div>
+    <h1>
+        @Html.PropertyFor(m => m.CurrentPage.Title)
+    </h1>
+
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.HeaderImage)
+    </div>
+
+    <p>
+        @Html.PropertyFor(m => m.CurrentPage.Description)
+    </p>
+
+    <p>
+        @Html.PropertyFor(m => m.CurrentPage.DateAndTime)
+    </p>
+
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.LocationNameAndAddress)
+    </div>
+
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.Price)
+    </div>
+
+    <div>
+        <a href="@Model.CurrentPage.CTAButtonUrl">
+            @Html.PropertyFor(m => m.CurrentPage.CTAButtonText)
+        </a>
+    </div>
+</div>

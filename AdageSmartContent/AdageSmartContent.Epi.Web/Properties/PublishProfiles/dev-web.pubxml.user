@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\dev-web\Working\APEX_WOWOWOWOWOWOW</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/EPiServerDB_09e47fbb.mdf">
+      <publishTime>06/13/2019 17:32:58</publishTime>
+    </File>
+    <File Include="App_Data/EPiServerDB_09e47fbb_log.ldf">
+      <publishTime>06/13/2019 17:32:58</publishTime>
+    </File>
+    <File Include="App_Data/GeoLiteCity.dat">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="App_Readme/Elmah.txt">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="bin/AdageSmartContent.Epi.Models.dll">
+      <publishTime>06/14/2019 10:43:35</publishTime>
+    </File>
+    <File Include="bin/AdageSmartContent.Epi.Models.dll.config">
+      <publishTime>06/13/2019 16:50:27</publishTime>
+    </File>
+    <File Include="bin/AdageSmartContent.Epi.Models.pdb">
+      <publishTime>06/14/2019 10:43:35</publishTime>
+    </File>
+    <File Include="bin/AdageSmartContent.Epi.ViewModels.dll">
+      <publishTime>06/14/2019 10:43:36</publishTime>
+    </File>
+    <File Include="bin/AdageSmartContent.Epi.ViewModels.dll.config">
+      <publishTime>06/13/2019 16:50:28</publishTime>
+    </File>
+    <File Include="bin/AdageSmartContent.Epi.ViewModels.pdb">
+      <publishTime>06/14/2019 10:43:36</publishTime>
+    </File>
+    <File Include="bin/AdageSmartContent.Epi.Web.dll">
+      <publishTime>06/14/2019 10:44:15</publishTime>
+    </File>
+    <File Include="bin/AdageSmartContent.Epi.Web.pdb">
+      <publishTime>06/14/2019 10:44:15</publishTime>
+    </File>
+    <File Include="bin/BVNetwork.EPi404.dll">
+      <publishTime>12/20/2018 09:27:38</publishTime>
+    </File>
+    <File Include="bin/Castle.Core.dll">
+      <publishTime>10/10/2017 08:13:52</publishTime>
+    </File>
+    <File Include="bin/Castle.Windsor.dll">
+      <publishTime>09/28/2017 05:15:10</publishTime>
+    </File>
+    <File Include="bin/Elmah.dll">
+      <publishTime>04/12/2012 19:19:36</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>02/25/2014 01:34:42</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>02/25/2014 01:34:42</publishTime>
+    </File>
+    <File Include="bin/EPiServer.ApplicationModules.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Cms.AddOns.Blocks.dll">
+      <publishTime>04/09/2018 09:25:22</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Cms.AspNet.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Cms.Shell.UI.dll">
+      <publishTime>12/10/2018 08:33:06</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Cms.TinyMce.dll">
+      <publishTime>11/23/2018 11:14:42</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Configuration.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Data.Cache.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Data.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Enterprise.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Events.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Framework.AspNet.dll">
+      <publishTime>11/30/2018 13:06:08</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Framework.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.ImageLibrary.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Licensing.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.LinkAnalyzer.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Logging.Log4Net.dll">
+      <publishTime>02/20/2018 09:39:16</publishTime>
+    </File>
+    <File Include="bin/EPiServer.ServiceLocation.StructureMap.dll">
+      <publishTime>02/23/2018 16:17:28</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Shell.dll">
+      <publishTime>12/10/2018 08:33:06</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Shell.UI.dll">
+      <publishTime>12/10/2018 08:33:06</publishTime>
+    </File>
+    <File Include="bin/EPiServer.UI.dll">
+      <publishTime>12/10/2018 08:33:06</publishTime>
+    </File>
+    <File Include="bin/EPiServer.Web.WebControls.dll">
+      <publishTime>11/30/2018 13:06:10</publishTime>
+    </File>
+    <File Include="bin/GatherContentConnect.dll">
+      <publishTime>10/15/2018 16:31:42</publishTime>
+    </File>
+    <File Include="bin/GatherContentImport.dll">
+      <publishTime>10/31/2018 10:09:00</publishTime>
+    </File>
+    <File Include="bin/Geta.SEO.Sitemaps.dll">
+      <publishTime>05/22/2018 11:23:42</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>03/08/2017 19:26:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>10/16/2017 14:14:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/18/2017 13:57:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.Process.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.DriveInfo.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Thread.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>09/21/2017 23:42:00</publishTime>
+    </File>
+    <File Include="bin/StructureMap.dll">
+      <publishTime>08/09/2017 11:48:30</publishTime>
+    </File>
+    <File Include="bin/StructureMap.Web.dll">
+      <publishTime>12/01/2015 17:10:28</publishTime>
+    </File>
+    <File Include="bin/StructureMap.Web.pdb">
+      <publishTime>12/01/2015 17:10:28</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.Annotations.dll">
+      <publishTime>07/19/2017 10:01:32</publishTime>
+    </File>
+    <File Include="bin/System.Data.SqlClient.dll">
+      <publishTime>07/19/2017 10:01:32</publishTime>
+    </File>
+    <File Include="bin/System.Security.AccessControl.dll">
+      <publishTime>05/15/2018 13:29:42</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Xml.dll">
+      <publishTime>05/15/2018 13:29:44</publishTime>
+    </File>
+    <File Include="bin/System.Security.Permissions.dll">
+      <publishTime>05/15/2018 13:29:40</publishTime>
+    </File>
+    <File Include="bin/System.Security.Principal.Windows.dll">
+      <publishTime>05/15/2018 13:29:42</publishTime>
+    </File>
+    <File Include="bin/System.Threading.AccessControl.dll">
+      <publishTime>07/19/2017 10:01:38</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Dataflow.dll">
+      <publishTime>11/07/2014 18:43:56</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>07/19/2017 10:01:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>01/28/2015 04:02:18</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>11/22/2013 10:21:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>01/28/2015 04:02:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>01/28/2015 04:04:30</publishTime>
+    </File>
+    <File Include="ClientResources/adage/stylesheets/epi-admin.css">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Controllers/Adage.EpiStarterKit.ControllerPartials/ClientPartials/ReadMe.txt">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Initialization/Adage.EpiStarterKit.InitializationPartials/ClientPartials/ReadMe.txt">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="module.config">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/css/chosen.css">
+      <publishTime>06/13/2019 16:55:07</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/css/loading.css">
+      <publishTime>06/13/2019 16:55:07</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/css/style.css">
+      <publishTime>06/13/2019 16:55:07</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/img/chosen-sprite%402x.png">
+      <publishTime>06/13/2019 16:55:07</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/img/chosen-sprite.png">
+      <publishTime>06/13/2019 16:55:07</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/img/loading-icon.png">
+      <publishTime>06/13/2019 16:55:07</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/js/chosen.jquery.js">
+      <publishTime>06/13/2019 16:55:07</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/js/chosen.proto.js">
+      <publishTime>06/13/2019 16:55:07</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/js/init.js">
+      <publishTime>06/13/2019 16:55:07</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/js/init.proto.js">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ClientResources/js/loading.js">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/GatherContentConfigSetup.aspx">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/GcEpiTemplateMappings.aspx">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/NewGcMappingStep1.aspx">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/NewGcMappingStep2.aspx">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/NewGcMappingStep3.aspx">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/NewGcMappingStep4.aspx">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/ReviewItemsForImport.aspx">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/GcEpiPlugin/SelectParent.aspx">
+      <publishTime>06/13/2019 16:55:06</publishTime>
+    </File>
+    <File Include="modules/Geta.SEO.Sitemaps/AdminManageSitemap.aspx">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/_protected/BVNetwork.404Handler/BVNetwork.404Handler.zip">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/_protected/CMS/CMS.zip">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/_protected/CMS/web.config">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/_protected/EPiServer.Cms.AddOns.Blocks/EPiServer.Cms.AddOns.Blocks.zip">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/_protected/EPiServer.Cms.AddOns.Blocks/module.config">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/_protected/EPiServer.Cms.TinyMce/EPiServer.Cms.TinyMce.zip">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/_protected/EPiServer.Cms.TinyMce/web.config">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/_protected/Shell/Shell.zip">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="modules/_protected/Shell/web.config">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="NotFound.aspx">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Rendering/Adage.EpiStarterKit.RenderingPartials/ClientPartials/ReadMe.txt">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/adage-sprite.svg">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Accordion-Container.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Accordion-Item.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Email-Sign-Up.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Fifty-Fifty-Container.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Full-Width-CTA.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Gallery-Container.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Highlight-Container.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Highlight-Item.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Image-Text-List-Container.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Image-Text-List.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Image.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Staff-Info-Container.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Staff-Info.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-Video.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Block-WYSIWYG.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Page-Container.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Page-Error.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Page-General-Content.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Page-Home.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Page-Mega-Navigation.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/img/Epi-Thumbs/Page-Site-Settings.png">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/src/denise-styles.css">
+      <publishTime>06/13/2019 18:45:37</publishTime>
+    </File>
+    <File Include="Static-Adage/src/epimode.css">
+      <publishTime>06/14/2019 10:43:03</publishTime>
+    </File>
+    <File Include="Static-Adage/src/starter-kit.css">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Static-Adage/src/starter-kit.js">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/AccordionContainerBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/AccordionItemBlockPreviewView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/CarouselContainerBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/CarouselItemBlockPreviewView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/CarouselItemBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/ColumnAutoContainerBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/ContentHighlightItemBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/DefaultBlockPreviewView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/EmailSignupBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/FiftyFiftyBlockPreviewView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/FiftyFiftyBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/FullWidthCTABlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/ImageBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/ImageTextContainerBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/ImageTextItemBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/LinkBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/LogosContainerBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/StaffInfoContainerBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/StaffInfoItemBlockPreviewView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/VideoBlockModalView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/VideoBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Blocks/WysiwygBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Pages/ContentPageView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Pages/ErrorPageView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Pages/HomePageView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Pages/SiteSettingsPageView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/ReadMe.txt">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/AccordionItem.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/Breadcrumbs.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/DisplayTemplates/ContentArea.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/DisplayTemplates/Image.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/Footer.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/Header.cshtml">
+      <publishTime>06/14/2019 10:43:03</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/HeaderMobile.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/Layouts/_BlockPreview.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/Layouts/_Root.cshtml">
+      <publishTime>06/14/2019 10:43:03</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/MegaNav.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/MegaNavMobile.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/SearchBar.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/SearchBarMobile.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/AdageViews/Shared/StaffInfoItem.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/ClientViews/Pages/ArticleDetailsPageView.cshtml">
+      <publishTime>06/13/2019 20:12:34</publishTime>
+    </File>
+    <File Include="Views/ClientViews/Pages/EventDetailsPageView.cshtml">
+      <publishTime>06/14/2019 10:43:13</publishTime>
+    </File>
+    <File Include="Views/ClientViews/ReadMe.txt">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/14/2019 08:17:49</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
