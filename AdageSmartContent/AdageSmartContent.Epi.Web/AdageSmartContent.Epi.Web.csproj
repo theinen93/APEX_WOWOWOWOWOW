@@ -327,6 +327,8 @@
     <Content Include="Static-Adage\img\Epi-Thumbs\Page-Site-Settings.png" />
     <Content Include="Static-Adage\src\denise-styles.css" />
     <Content Include="Static-Adage\src\epimode.css" />
+    <Content Include="Static-Adage\src\esk-base.css" />
+    <Content Include="Static-Adage\src\main.css" />
     <Content Include="Static-Adage\src\starter-kit.css" />
     <Content Include="Static-Adage\src\starter-kit.js" />
     <Content Include="Views\AdageViews\ReadMe.txt" />
@@ -395,7 +397,13 @@
     <Content Include="Views\AdageViews\Blocks\AccordionContainerBlockView.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\ClientViews\Pages\ArticleDetailsPageView.cshtml" />
+    <None Include="Properties\PublishProfiles\dev-web.pubxml" />
+    <Content Include="Static-Adage\src\main.css.map" />
+    <Content Include="Static-Adage\src\epimode.css.map" />
+    <Content Include="Static-Adage\src\esk-base.css.map" />
     <Content Include="Views\ClientViews\Pages\EventDetailsPageView.cshtml" />
+    <Content Include="Static-Adage\src\starter-kit.css.map" />
+    <Content Include="Static-Adage\src\starter-kit.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

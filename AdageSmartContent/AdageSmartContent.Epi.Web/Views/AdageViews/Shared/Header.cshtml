@@ -1,16 +1,58 @@
 ﻿@using EPiServer.Core
+@using EPiServer.Core
 @using EPiServer.Web.Mvc.Html
 @using EPiServer.Framework.Web.Mvc.Html
 @using Adage.EpiStarterKit.ModelPartials.Models.Pages
 @using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
 
-@model IPageViewModel<PageData>
+@model IPageViewModel<AdageBasePage>
 
+<header id="siteHeader" class="header" role="banner">
+    <div class="header-top">
+        <div class="header-top-inner">
+            <a href="/" class="header-logo">
+                <img class="header-logo-image" src="@Url.ContentUrl(Model.SiteDataRepository.SiteSettingsPage.Logo.Image)" aria-hidden="true" role="presentation" />
+                <span class="visually-hidden">Navigate to ATAP homepage</span>
+            </a>
 
-<div class="header-nav">
-    <a href="/">
-        <img class="header-nav-logo" src="@Url.ContentUrl(Model.SiteDataRepository.SiteSettingsPage.Logo.Image)" />
-    </a>
-    @{ Html.RenderAction("RenderMegaNav", "SiteSettingsPage"); }
-    @{ Html.RenderAction("RenderSearch", "SiteSettingsPage"); }
-</div>
+            <div class="mobile-nav">
+                <button type="button" class="mobile-nav-search-trigger mobile-nav-search-trigger-js">
+                    <svg class="svg-icon icon-search" aria-hidden="true" role="presentation" focusable="false">
+                        <use xlink:href="#icon-search"></use>
+                    </svg>
+                    <span class="visually-hidden">Activate for site search</span>
+                </button>
+
+                <button type="button" class="mobile-nav-trigger mobile-nav-trigger-js" title="Activate for site menu" aria-label="Activate for site menu">
+                    <span class="mobile-nav-trigger-icon" aria-hidden="true" role="presentation"><span></span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-nav-container">
+        <div class="header-nav">
+            <div class="header-nav-inner">
+                @{ Html.RenderAction("RenderMegaNav", "SiteSettingsPage"); }
+
+                <div class="header-nav-secondary">
+                    <div class="header-nav-secondary-inner">
+                        @if (Model.SiteDataRepository.SiteSettingsPage.UtilityNavLinks != null)
+                        {
+                            <nav>
+                                <ul>
+                                    @foreach (var item in Model.SiteDataRepository.SiteSettingsPage.UtilityNavLinks)
+                                    {
+                                        <li><a href="@Url.ContentUrl(item.Href)">@item.Text</a></li>
+                                    }
+                                </ul>
+                            </nav>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @{ Html.RenderAction("RenderSearch", "SiteSettingsPage"); }
+    </div>
+</header>

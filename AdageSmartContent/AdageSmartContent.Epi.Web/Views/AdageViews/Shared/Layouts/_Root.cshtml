@@ -4,7 +4,7 @@
 @using Adage.EpiStarterKit.ModelPartials.Models.Pages
 @using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
 
-@model IPageViewModel<PageData>
+@model IPageViewModel<AdageBasePage>
 
 <!DOCTYPE html>
 <html>
@@ -32,22 +32,23 @@
 
     <title>@Model.MetaTitle</title>
 
-    @if (!string.IsNullOrEmpty(Model.SEODescription))
+    @if (!string.IsNullOrEmpty(Model.CurrentPage.SEODescription))
     {
-        <meta name="description" content="@Model.SEODescription" />
+        <meta name="description" content="@Model.CurrentPage.SEODescription" />
     }
-    @if (!string.IsNullOrEmpty(Model.SEOKeywords))
+    @if (!string.IsNullOrEmpty(Model.CurrentPage.SEOKeywords))
     {
-        <meta name="keywords" content="@Model.SEOKeywords" />
+        <meta name="keywords" content="@Model.CurrentPage.SEOKeywords" />
     }
-    @if (!string.IsNullOrEmpty(Model.SEORobots))
+    @if (!string.IsNullOrEmpty(Model.CurrentPage.SEORobots))
     {
-        <meta name="robots" content="@Model.SEORobots" />
+        <meta name="robots" content="@Model.CurrentPage.SEORobots" />
     }
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/Static-Adage/src/starter-kit.css" />
-    <link rel="stylesheet" type="text/css" href="/Static-Adage/src/denise-styles.css" />
+    <link rel="stylesheet" type="text/css" href="/Static-Adage/src/esk-base.css" />
+
     @if (EPiServer.Editor.PageEditing.PageIsInEditMode)
     {
         <link rel="stylesheet" type="text/css" href="/Static-Adage/src/epimode.css" />
@@ -56,9 +57,9 @@
     @Html.RequiredClientResources("Header")
 
     @Html.Raw(Model.SiteDataRepository.SiteSettingsPage.GlobalHeadScripts)
-    @if (!string.IsNullOrEmpty(Model.Script))
+    @if (!string.IsNullOrEmpty(Model.CurrentPage.Script))
     {
-        @Html.Raw(Model.Script)
+        @Html.Raw(Model.CurrentPage.Script)
     }
 </head>
 <body>
@@ -67,8 +68,8 @@
     @Html.FullRefreshPropertiesMetaData()
     <header class="header" role="banner">
         @Html.Partial("/Views/AdageViews/Shared/Header.cshtml", Model)
-        @Html.Partial("/Views/AdageViews/Shared/HeaderMobile.cshtml", Model)
     </header>
+
     <main id="main">
         @RenderBody()
     </main>
