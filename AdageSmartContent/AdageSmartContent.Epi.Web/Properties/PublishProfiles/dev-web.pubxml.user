@@ -22,28 +22,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 16:50:30</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Models.dll">
-      <publishTime>06/14/2019 10:49:40</publishTime>
+      <publishTime>06/14/2019 12:25:21</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Models.dll.config">
       <publishTime>06/13/2019 16:50:27</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Models.pdb">
-      <publishTime>06/14/2019 10:49:40</publishTime>
+      <publishTime>06/14/2019 12:25:21</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.ViewModels.dll">
-      <publishTime>06/14/2019 10:49:41</publishTime>
+      <publishTime>06/14/2019 12:25:22</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.ViewModels.dll.config">
       <publishTime>06/13/2019 16:50:28</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.ViewModels.pdb">
-      <publishTime>06/14/2019 10:49:41</publishTime>
+      <publishTime>06/14/2019 12:25:22</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Web.dll">
-      <publishTime>06/14/2019 10:51:18</publishTime>
+      <publishTime>06/14/2019 12:25:28</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Web.pdb">
-      <publishTime>06/14/2019 10:51:18</publishTime>
+      <publishTime>06/14/2019 12:25:28</publishTime>
     </File>
     <File Include="bin/BVNetwork.EPi404.dll">
       <publishTime>12/20/2018 09:27:38</publishTime>
@@ -685,7 +685,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 20:12:34</publishTime>
     </File>
     <File Include="Views/ClientViews/Pages/EventDetailsPageView.cshtml">
-      <publishTime>06/14/2019 11:49:39</publishTime>
+      <publishTime>06/14/2019 11:51:09</publishTime>
     </File>
     <File Include="Views/ClientViews/ReadMe.txt">
       <publishTime>06/13/2019 16:50:30</publishTime>
