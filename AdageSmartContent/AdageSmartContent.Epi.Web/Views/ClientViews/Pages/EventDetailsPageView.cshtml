@@ -8,22 +8,30 @@
 
 @{ Layout = ConfigurationManager.AppSettings.Get("ROOT_LAYOUT_LOCATION") ?? "~/Views/AdageViews/Shared/Layouts/_Root.cshtml"; }
 
-@{
-    Html.RenderAction("RenderBreadcrumbs", "SiteSettingsPage", new { page = Model.CurrentPage });
-}
-
 <div>
-    <h1>
-        @Html.PropertyFor(m => m.CurrentPage.Title)
-    </h1>
+    <section class="adage-block adage-block-full-bleed adage-hero-block">
+        <div class="adage-secondary-hero adage-secondary-hero-img-tint">
+            <div class="adage-secondary-hero-img">
+                @Html.PropertyFor(m => m.CurrentPage.HeaderImage)
+            </div>
+            <div class="adage-secondary-hero-inner">
+                <div class="adage-secondary-hero-content-container">
+                    <div class="adage-secondary-hero-content-inner">
+                        <h1 class="adage-block-heading adage-secondary-hero-heading">@Html.PropertyFor(m => m.CurrentPage.Title)</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="adage-block adage-wysiwyg-block-container">
+        <div class="adage-block-inner adage-wysiwyg-block">
+            <div class="rich-text">
+                @Html.PropertyFor(m => m.CurrentPage.Description)
 
-    <div>
-        @Html.PropertyFor(m => m.CurrentPage.HeaderImage)
-    </div>
+            </div>
+        </div>
+    </section>
 
-    <p>
-        @Html.PropertyFor(m => m.CurrentPage.Description)
-    </p>
 
     <p>
         @Html.PropertyFor(m => m.CurrentPage.DateAndTime)
