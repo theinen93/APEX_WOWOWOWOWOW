@@ -48,6 +48,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/Static-Adage/src/starter-kit.css" />
     <link rel="stylesheet" type="text/css" href="/Static-Adage/src/denise-styles.css" />
+    <link rel="stylesheet" type="text/css" href="/Static-Adage/src/main.css" />
+    <link rel="stylesheet" type="text/css" href="/Static-Adage/src/esk-base.css" />
     @if (EPiServer.Editor.PageEditing.PageIsInEditMode)
     {
         <link rel="stylesheet" type="text/css" href="/Static-Adage/src/epimode.css" />
@@ -67,7 +69,7 @@
     @Html.FullRefreshPropertiesMetaData()
     <header class="header" role="banner">
         @Html.Partial("/Views/AdageViews/Shared/Header.cshtml", Model)
-        @Html.Partial("/Views/AdageViews/Shared/HeaderMobile.cshtml", Model)
+        @*@Html.Partial("/Views/AdageViews/Shared/HeaderMobile.cshtml", Model)*@
     </header>
     <main id="main">
         @RenderBody()
