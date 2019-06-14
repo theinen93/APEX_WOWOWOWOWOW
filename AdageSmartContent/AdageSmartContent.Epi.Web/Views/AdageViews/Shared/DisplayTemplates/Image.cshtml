@@ -2,6 +2,7 @@
 @using EPiServer.Web.Mvc.Html
 @using EPiServer
 @using Adage.EpiStarterKit.ModelPartials.Models.Media
+@using GatherContentImport.Models.Media
 
 @model ContentReference
 
@@ -10,9 +11,20 @@
 @if (!ContentReference.IsNullOrEmpty(Model))
 {
     var contentRepository = EPiServer.ServiceLocation.ServiceLocator.Current.GetInstance<IContentRepository>();
-    var imageData = contentRepository.Get<ImageFile>(Model);
-    if (imageData != null)
+    try
     {
-        <img src="@Url.ContentUrl(Model)" alt="@imageData.AltText" class="@ViewData["cssClass"]" />
+        var imageData = contentRepository.Get<ImageFile>(Model);
+        if (imageData != null)
+        {
+            <img src="@Url.ContentUrl(Model)" alt="@imageData.AltText" class="@ViewData["cssClass"]" />
+        }
+    }
+    catch (Exception ex)
+    {
+        var imageData = contentRepository.Get<GcEpiImageFile>(Model);
+        if (imageData != null)
+        {
+            <img src="@Url.ContentUrl(Model)" class="@ViewData["cssClass"]" />
+        }
     }
 }
