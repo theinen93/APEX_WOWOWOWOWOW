@@ -400,6 +400,7 @@
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Views\AdageViews\Pages\ArticleDetailsPage.cshtml" />
     <Content Include="Views\ClientViews\Pages\ArticleDetailsPageView.cshtml" />
+    <Content Include="Views\ClientViews\Pages\EventDetailsPageView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
