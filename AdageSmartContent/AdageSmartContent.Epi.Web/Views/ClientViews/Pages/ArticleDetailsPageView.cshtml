@@ -1,0 +1,43 @@
+﻿ing EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@using System.Configuration
+@using Adage.EpiStarterKit.ModelPartials.Models.Pages
+@using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
+
+@model IPageViewModel<ArticleDetailsPage>
+
+@{ Layout = ConfigurationManager.AppSettings.Get("ROOT_LAYOUT_LOCATION") ?? "~/Views/AdageViews/Shared/Layouts/_Root.cshtml"; }
+
+@{
+    Html.RenderAction("RenderBreadcrumbs", "SiteSettingsPage", new { page = Model.CurrentPage });
+}
+
+<div>
+    <h1>
+        @Html.PropertyFor(m => m.CurrentPage.ArticleTitle)
+    </h1>
+
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.Image)
+    </div>
+
+    <p>
+        @Html.PropertyFor(m => m.CurrentPage.AuthorByline)
+    </p>
+
+    <p>
+        @Html.PropertyFor(m => m.CurrentPage.PublishDate)
+    </p>
+
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.IntroductoryParagraph)
+    </div>
+
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.BodyContent)
+    </div>
+
+    <div>
+        @Html.PropertyFor(m => m.CurrentPage.Refrences)
+    </div>
+</div>
