@@ -138,7 +138,8 @@
       <HintPath>..\..\packages\GatherContentConnect.1.0.2\lib\net452\GatherContentConnect.dll</HintPath>
     </Reference>
     <Reference Include="GatherContentImport, Version=1.0.6878.17101, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\GatherContent.EPi.Import.1.0.0.4-RC\lib\GatherContentImport.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\GatherContentImport.dll</HintPath>
     </Reference>
     <Reference Include="Geta.SEO.Sitemaps, Version=2.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Geta.SEO.Sitemaps.2.0.8\lib\net461\Geta.SEO.Sitemaps.dll</HintPath>

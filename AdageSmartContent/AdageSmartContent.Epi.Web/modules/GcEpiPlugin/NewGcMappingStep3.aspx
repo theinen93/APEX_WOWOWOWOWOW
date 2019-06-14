@@ -15,9 +15,6 @@
         .auto-style3 {
             width: 329px;
         }
-        .line-spacing {
-            height: 42px;
-        }
     </style>
    
 </head>
@@ -32,13 +29,13 @@
         <table style="width: 100%;">
             <thead>
             <tr>
-                <td class="auto-style1" style="font-weight: bold;">GatherContent Field</td>
-                <td class="auto-style2" style="font-weight: bold;">Mapped EPiServer Type</td>
-                <td class="auto-style1" style="font-weight: bold;">Page/Block Type</td>
+                <td class="auto-style1">GatherContent Field</td>
+                <td class="auto-style2">Mapped EPiServer Type</td>
+                <td class="auto-style1">Page/Block Type</td>
             </tr>
             </thead>
             <tbody>
-            <tr class="line-spacing">
+            <tr>
                 <td>Post Type</td>
                 <td class="auto-style3">
                     <asp:DropDownList runat="server" ID="ddlPostTypes" AutoPostBack="True" class="chosen-select" OnSelectedIndexChanged="DdlPostTypes_OnSelectedIndexChanged" Height="30px" Width="250px">
@@ -52,13 +49,13 @@
                     <asp:DropDownList runat="server" ID="ddlEpiContentTypes" class="chosen-select" Enabled="False" Visible="False" Height="30px" Width="250px"/>
                 </td>
             </tr>
-            <tr class="line-spacing">
+            <tr>
                 <td>Author</td>
                 <td class="auto-style3">
                     <asp:DropDownList runat="server" ID="ddlAuthors" class="chosen-select"  Height="30px" Width="250px"/>
                 </td>
             </tr>
-            <tr class="line-spacing">
+            <tr>
                 <td>Default Status</td>
                 <td class="auto-style3">
                     <asp:DropDownList runat="server" ID="ddlStatuses" class="chosen-select" Height="30px" Width="250px"/>

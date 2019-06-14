@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.489
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdageSmartContent.Epi.Models", "AdageSmartContent\AdageSmartContent.Epi.Models\AdageSmartContent.Epi.Models.csproj", "{468F1174-CBA1-4E89-9301-6E5F58682A86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdageSmartContent.Epi.ViewModels", "AdageSmartContent\AdageSmartContent.Epi.ViewModels\AdageSmartContent.Epi.ViewModels.csproj", "{C1AE7E26-9029-47DC-AFD1-219DECB7A8AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdageSmartContent.Epi.Web", "AdageSmartContent\AdageSmartContent.Epi.Web\AdageSmartContent.Epi.Web.csproj", "{12DF23AE-3431-4EAB-B0A5-1AAB4F13AA92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{5619D008-785D-41CF-B09C-32361F1C533C}"
+	ProjectSection(SolutionItems) = preProject
+		AdageSmartContent\Libraries\GatherContentImport.dll = AdageSmartContent\Libraries\GatherContentImport.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
