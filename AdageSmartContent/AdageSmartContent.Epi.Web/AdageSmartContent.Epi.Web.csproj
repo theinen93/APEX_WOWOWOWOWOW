@@ -377,7 +377,7 @@
     <Content Include="Views\AdageViews\Blocks\WysiwygBlockView.cshtml" />
     <Content Include="Views\AdageViews\Blocks\VideoBlockView.cshtml" />
     <Content Include="Views\AdageViews\Blocks\VideoBlockModalView.cshtml" />
-    <Content Include="Views\AdageViews\Blocks\StaffInfoItemBlockPreviewView.cshtml" />
+    <Content Include="Views\AdageViews\Blocks\StaffInfoItemBlockView.cshtml" />
     <Content Include="Views\AdageViews\Blocks\StaffInfoContainerBlockView.cshtml" />
     <Content Include="Views\AdageViews\Blocks\LogosContainerBlockView.cshtml" />
     <Content Include="Views\AdageViews\Blocks\LinkBlockView.cshtml" />
