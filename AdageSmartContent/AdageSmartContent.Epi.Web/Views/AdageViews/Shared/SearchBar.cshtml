@@ -4,7 +4,21 @@
 
 @model ISiteDataRepository
 
-<form action="@Model.SiteSettingsPage.SearchResultsPage" method="get">
-    <input type="search" placeholder="@Model.SiteSettingsPage.SearchPlaceholderText" required />
-    <input type="submit" value="@Model.SiteSettingsPage.SearchButtonText" />
-</form>
+<div class="header-search">
+    <div class="header-search-inner">
+        <form action="@Model.SiteSettingsPage.SearchResultsPage" method="get">
+            <label for="headerSearchField">Search through the site content</label>
+            <div class="form-group">
+                <input id="headerSearchField" type="search" name="q" placeholder="@Model.SiteSettingsPage.SearchPlaceholderText" required />
+                <div class="form-group-btn">
+                    <button type="submit" class="btn btn-primary">
+                        <svg class="svg-icon icon-search" aria-hidden="true" role="presentation" focusable="false">
+                            <use xlink:href="#icon-search"></use>
+                        </svg>
+                        <span class="visually-hidden">@Model.SiteSettingsPage.SearchButtonText</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

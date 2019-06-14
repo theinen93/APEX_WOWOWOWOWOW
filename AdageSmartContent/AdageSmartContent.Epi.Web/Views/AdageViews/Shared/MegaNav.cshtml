@@ -4,30 +4,20 @@
 
 @model ISiteNavigationRepository
 
-<nav class="nav">
-    @foreach(var linkItem in Model.UtilityNavLinks)
-    {
-        <a href="@Url.PageUrl(linkItem.Href)" target="@linkItem.Target" title="@linkItem.Title">@linkItem.LinkText</a>
-    }
-    @foreach (var navItem in Model.MegaNavItems)
-    {
-        if (navItem.IsMegaNavContainerPage)
+<div id="siteNav" class="header-nav-primary">
+    <nav class="nav">
+        @if (Model.MegaNavItems != null)
         {
-            <p>@navItem.NavPageData.Name</p>
-            <div>
-                @foreach (var childPage in navItem.MegaNavChildren)
+            <ul>
+                @foreach (var navItem in Model.MegaNavItems)
                 {
-                    <p style="padding-left:1em">
-                        <a href="@childPage.LinkURL">@childPage.Name</a>
-                    </p>
+                    <li>
+                        <a href="@navItem.NavPageData.LinkURL">
+                            @navItem.NavPageData.Name
+                        </a>
+                    </li>
                 }
-            </div>
+            </ul>
         }
-        else
-        {
-            <p>
-                <a href="@navItem.NavPageData.LinkURL">@navItem.NavPageData.Name</a>
-            </p>
-        }
-    }
-</nav>
+    </nav>
+</div>

@@ -1,64 +1,78 @@
-﻿@using EPiServer.Core
-@using EPiServer.Web.Mvc.Html
-@using EPiServer.Framework.Web.Mvc.Html
+﻿@using EPiServer.Web.Mvc.Html
 @using Adage.EpiStarterKit.ModelPartials.Models.Pages
 @using Adage.EpiStarterKit.ViewModelPartials.ViewModels.Pages
 
-@model IPageViewModel<PageData>
+@model IPageViewModel<AdageBasePage>
 
 <footer class="page-footer">
     <section class="page-footer-inner footer-top">
         <div class="footer-top-inner">
-            <div class="footer-block">
-                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.LeftWYSIWYG)
-            </div>
-            <div class="footer-block">
-                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.LeftCenterWYSIWYG)
-            </div>
-            <div class="footer-block">
-                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.RightCenterWYSIWYG)
-            </div>
-            <div class="footer-block">
-                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.RightWYSIWYG)
-                <div class="social-media-container">
-                    <ul class="social-media">
-                        <li>
-                            <a href="@Model.SiteDataRepository.SiteSettingsPage.TwitterUrl">
-                                <svg class="svg-icon" aria-hidden="true" focusable="false">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter" />
-                                </svg>
-                                <span class="visually-hidden">Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Model.SiteDataRepository.SiteSettingsPage.FacebookUrl">
-                                <svg class="svg-icon" aria-hidden="true" focusable="false">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook" />
-                                </svg>
-                                <span class="visually-hidden">Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Model.SiteDataRepository.SiteSettingsPage.InstagramUrl">
-                                <svg class="svg-icon" aria-hidden="true" focusable="false">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram" />
-                                </svg>
-                                <span class="visually-hidden">Instagram</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            
+            <ul class="adage-accordion-inner open-accordion" data-accordion-list="@Model.CurrentPage.WorkPageID" aria-label="Accordion Control Group Buttons">
+                @*@if (!String.IsNullOrWhiteSpace(Model.SiteDataRepository.SiteSettingsPage.LeftWYSIWYGTitle) && Model.SiteDataRepository.SiteSettingsPage.LeftWYSIWYG != null)
+                {
+                    <li class="adage-accordion-item footer-block">
+                        <button class="adage-accordion-trigger" type="button" aria-controls="LeftWYSIWYG" aria-expanded="false" data-epi-property-name="Title">
+                            <h2 class="footer-top-title">@Model.SiteDataRepository.SiteSettingsPage.LeftWYSIWYGTitle</h2>
+                        </button>
+                        <div class="adage-accordion-panel" aria-hidden="true" id="LeftWYSIWYG">
+                            <div class="adage-accordion-panel-content rich-text" data-accordion-content-id="LeftWYSIWYG" data-epi-property-name="AccordionContent">
+                                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.LeftWYSIWYG)
+                            </div>
+                        </div>
+                    </li>
+                }*@
+                @*@if (!String.IsNullOrWhiteSpace(Model.SiteDataRepository.SiteSettingsPage.LeftCenterWYSIWYGTitle) && Model.SiteDataRepository.SiteSettingsPage.LeftCenterWYSIWYG != null)
+                {
+                    <li class="adage-accordion-item footer-block">
+                        <button class="adage-accordion-trigger" type="button" aria-controls="LeftCenterWYSIWYG" aria-expanded="false" data-epi-property-name="Title">
+                            <h2 class="footer-top-title">@Model.SiteDataRepository.SiteSettingsPage.LeftCenterWYSIWYGTitle</h2>
+                        </button>
+                        <div class="adage-accordion-panel" aria-hidden="true" id="LeftCenterWYSIWYG">
+                            <div class="adage-accordion-panel-content rich-text" data-accordion-content-id="LeftCenterWYSIWYG" data-epi-property-name="AccordionContent">
+                                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.LeftCenterWYSIWYG)
+                            </div>
+                        </div>
+                    </li>
+                }*@
+                @*@if (!String.IsNullOrWhiteSpace(Model.SiteDataRepository.SiteSettingsPage.RightCenterWYSIWYGTitle) && Model.SiteDataRepository.SiteSettingsPage.RightCenterWYSIWYG != null)
+                {
+                    <li class="adage-accordion-item footer-block">
+                        <button class="adage-accordion-trigger" type="button" aria-controls="RightCenterWYSIWYGTitle" aria-expanded="false" data-epi-property-name="Title">
+                            <h2 class="footer-top-title">@Model.SiteDataRepository.SiteSettingsPage.RightCenterWYSIWYGTitle</h2>
+                        </button>
+                        <div class="adage-accordion-panel" aria-hidden="true" id="RightCenterWYSIWYGTitle">
+                            <div class="adage-accordion-panel-content rich-text" data-accordion-content-id="RightCenterWYSIWYGTitle" data-epi-property-name="AccordionContent">
+                                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.RightCenterWYSIWYG)
+                            </div>
+                        </div>
+                    </li>
+                }*@
+                @if (Model.SiteDataRepository.SiteSettingsPage.InstagramUrl != null)
+                {
+                    <li>
+                        <a href="@Model.SiteDataRepository.SiteSettingsPage.InstagramUrl">
+                            <svg class="svg-icon" aria-hidden="true" focusable="false">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram" />
+                            </svg>
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                    </li>
+                }
+            </ul>
         </div>
+
     </section>
     <section class="page-footer-inner footer-bottom">
-        <div class="copyright">
-            <p @Html.EditAttributes(m => m.SiteDataRepository.SiteSettingsPage.CopyrightText)>@Model.SiteDataRepository.SiteSettingsPage.CopyrightText</p>
-        </div>
-        <div class="user-info-links">
-            @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.FooterLinkArea)
+        <div class="footer-bottom-inner">
+            <div class="copyright">
+                @if (!String.IsNullOrWhiteSpace(Model.SiteDataRepository.SiteSettingsPage.CopyrightText))
+                {
+                    <p @Html.EditAttributes(m => m.SiteDataRepository.SiteSettingsPage.CopyrightText)>&copy; @Model.SiteDataRepository.SiteSettingsPage.CopyrightText</p>
+                }
+            </div>
+            <div class="user-info-links">
+                @Html.PropertyFor(m => m.SiteDataRepository.SiteSettingsPage.FooterLinkArea)
+            </div>
         </div>
     </section>
 </footer>
