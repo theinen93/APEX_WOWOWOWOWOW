@@ -23,9 +23,29 @@
 }
 
 .right-rail {
-    float: right;
-    min-width: 18.75rem;
-    height: 100vh;
-    margin-left: 2rem;
-    margin-right: 6rem;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 64em) {
+
+
+    .right-rail {
+        float: right;
+        min-width: 18.75rem;
+        height: 100vh;
+        margin-left: 2rem;
+        margin-right: 6rem;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .right-rail {
+        padding: 0 2rem;
+    }
 }
