@@ -23,6 +23,17 @@
 }
 
 .right-rail {
+    float: right;
+    min-width: 18.75rem;
+    height: 100vh;
+    margin-left: 2rem;
+    margin-right: 6rem;
+}
+
+
+.adage-wysiwyg-block{
+    padding-bottom: 1rem !important;
+}
     height: auto;
     display: block;
     margin-left: auto;

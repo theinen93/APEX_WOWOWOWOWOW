@@ -5,9 +5,9 @@
 @model IPageViewModel<AdageBasePage>
 
 <footer class="page-footer">
-    <section class="page-footer-inner footer-top">
+    @*<section class="page-footer-inner footer-top">
         <div class="footer-top-inner">
-            <ul class="adage-accordion-inner open-accordion" data-accordion-list="@Model.CurrentPage.WorkPageID" aria-label="Accordion Control Group Buttons">
+            <ul class="adage-accordion-inner open-accordion" data-accordion-list="@Model.CurrentPage.WorkPageID" aria-label="Accordion Control Group Buttons">*@
                 @*@if (!String.IsNullOrWhiteSpace(Model.SiteDataRepository.SiteSettingsPage.LeftWYSIWYGTitle) && Model.SiteDataRepository.SiteSettingsPage.LeftWYSIWYG != null)
                 {
                     <li class="adage-accordion-item footer-block">
@@ -47,7 +47,7 @@
                         </div>
                     </li>
                 }*@
-                @if (Model.SiteDataRepository.SiteSettingsPage.InstagramUrl != null)
+                @*@if (Model.SiteDataRepository.SiteSettingsPage.InstagramUrl != null)
                 {
                     <li>
                         <a href="@Model.SiteDataRepository.SiteSettingsPage.InstagramUrl">
@@ -61,7 +61,7 @@
             </ul>
         </div>
 
-    </section>
+    </section>*@
     <section class="page-footer-inner footer-bottom">
         <div class="footer-bottom-inner">
             <div class="copyright">
