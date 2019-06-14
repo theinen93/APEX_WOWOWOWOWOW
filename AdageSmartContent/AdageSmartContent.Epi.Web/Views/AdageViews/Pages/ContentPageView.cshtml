@@ -8,9 +8,5 @@
 
 @{ Layout = ConfigurationManager.AppSettings.Get("ROOT_LAYOUT_LOCATION") ?? "~/Views/AdageViews/Shared/Layouts/_Root.cshtml"; }
 
-@{
-    Html.RenderAction("RenderBreadcrumbs", "SiteSettingsPage", new { page = Model.CurrentPage });
-}
-
 @Html.PropertyFor(m => m.CurrentPage.ContentArea)
 

@@ -8,36 +8,35 @@
 
 @{ Layout = ConfigurationManager.AppSettings.Get("ROOT_LAYOUT_LOCATION") ?? "~/Views/AdageViews/Shared/Layouts/_Root.cshtml"; }
 
-@{
-    Html.RenderAction("RenderBreadcrumbs", "SiteSettingsPage", new { page = Model.CurrentPage });
-}
-
 <div>
-    <h1>
-        @Html.PropertyFor(m => m.CurrentPage.ArticleTitle)
-    </h1>
-
-    <div>
-        <img src="@Model.CurrentPage.Image" />
-    </div>
-
-    <p>
-        @Html.PropertyFor(m => m.CurrentPage.AuthorByline)
-    </p>
-
-    <p>
-        @Html.PropertyFor(m => m.CurrentPage.PublishDate)
-    </p>
-
-    <div>
-        @Html.PropertyFor(m => m.CurrentPage.IntroductoryParagraph)
-    </div>
-
-    <div>
-        @Html.PropertyFor(m => m.CurrentPage.BodyContent)
-    </div>
-
-    <div>
-        @Html.PropertyFor(m => m.CurrentPage.Refrences)
-    </div>
+    <section class="adage-block adage-block-full-bleed adage-hero-block">
+        <div class="adage-secondary-hero adage-secondary-hero-img-tint">
+            <div class="adage-secondary-hero-img">
+                <img src="@Model.CurrentPage.ArticleTitle" />
+            </div>
+            <div class="adage-secondary-hero-inner">
+                <div class="adage-secondary-hero-content-container">
+                    <div class="adage-secondary-hero-content-inner">
+                        <h1 class="adage-block-heading adage-secondary-hero-heading">@Html.PropertyFor(m => m.CurrentPage.ArticleTitle)</h1>
+                        <p>@Html.PropertyFor(m => m.CurrentPage.AuthorByline)</p>
+                        <p>@(Model.CurrentPage.PublishDate != null ? Model.CurrentPage.PublishDate.ToString("MMMM dd, yyyy") : string.Empty)<p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="adage-block adage-wysiwyg-block-container">
+        <div class="adage-block-inner adage-wysiwyg-block">
+            <div class="rich-text">
+                @Html.PropertyFor(m => m.CurrentPage.IntroductoryParagraph)
+            </div>
+            <div class="rich-text">
+                @Html.PropertyFor(m => m.CurrentPage.BodyContent)
+            </div>
+            <div class="rich-text">
+                @Html.PropertyFor(m => m.CurrentPage.Refrences)
+            </div>
+        </div>
+    </section>
+    
 </div>
