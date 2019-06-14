@@ -5,18 +5,38 @@
 
 @model IBlockViewModel<ImageTextItemBlock>
 
-<article class="adage-listing-item">
-    <div class="adage-listing-item-image">
-        <div class="adage-listing-item-image-inner ratio-wide" data-full-bleed-image>
-            @Html.PropertyFor(m => m.CurrentBlock.Image)
-        </div>
-    </div>
-    <div>
-        @Html.PropertyFor(m => m.CurrentBlock.Title)
-    </div>
-    <div class="adage-listing-item-content">
+<div class="adage-image-text-item">
+    <figure class="adage-image-text-item-image">
+        @if (Model.CurrentBlock.Image != null && Model.CurrentBlock.Image.LinkUrl != null)
+        {
+            <a href="@Model.CurrentBlock.Image.LinkUrl" target="@Model.CurrentBlock.Image.TargetFrameRaw" class="adage-image-block-link">
+                <div class="adage-image-text-item-image-container">
+                    @Html.PropertyFor(m => m.CurrentBlock.Image)
+                </div>
+            </a>
+        }
+        else
+        {
+            <div class="adage-image-text-item-image-container">
+                @Html.PropertyFor(m => m.CurrentBlock.Image)
+            </div>
+        }
+    </figure>
+    <div class="adage-image-text-item-details">
+        @if (!String.IsNullOrWhiteSpace(Model.CurrentBlock.PreTitle))
+        {
+            <p class="adage-image-text-item-details-date">@Model.CurrentBlock.PreTitle</p>
+        }
+        @if (Model.CurrentBlock.Image != null && Model.CurrentBlock.Image.LinkUrl != null)
+        {
+            <h3><a href="@Model.CurrentBlock.Image.LinkUrl" target="@Model.CurrentBlock.Image.TargetFrameRaw">@Html.PropertyFor(m => m.CurrentBlock.Title)</a></h3>
+        }
+        else
+        {
+            <h3>@Html.PropertyFor(m => m.CurrentBlock.Title)</h3>
+        }
         <div class="rich-text">
             @Html.PropertyFor(m => m.CurrentBlock.WysiwygContent)
         </div>
     </div>
-</article>
+</div>

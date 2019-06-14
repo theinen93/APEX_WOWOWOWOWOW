@@ -40,10 +40,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/14/2019 12:25:22</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Web.dll">
-      <publishTime>06/14/2019 13:01:34</publishTime>
+      <publishTime>06/14/2019 13:38:44</publishTime>
     </File>
     <File Include="bin/AdageSmartContent.Epi.Web.pdb">
-      <publishTime>06/14/2019 13:01:34</publishTime>
+      <publishTime>06/14/2019 13:38:44</publishTime>
     </File>
     <File Include="bin/BVNetwork.EPi404.dll">
       <publishTime>12/20/2018 09:27:38</publishTime>
@@ -526,7 +526,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 16:50:30</publishTime>
     </File>
     <File Include="Static-Adage/src/denise-styles.css">
-      <publishTime>06/14/2019 11:39:37</publishTime>
+      <publishTime>06/14/2019 13:34:20</publishTime>
     </File>
     <File Include="Static-Adage/src/epimode.css">
       <publishTime>06/14/2019 11:39:37</publishTime>
@@ -577,7 +577,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 16:50:30</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/ContentHighlightItemBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/14/2019 13:11:50</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/DefaultBlockPreviewView.cshtml">
       <publishTime>06/13/2019 16:50:30</publishTime>
@@ -601,7 +601,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 16:50:30</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/ImageTextItemBlockView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/14/2019 13:34:20</publishTime>
     </File>
     <File Include="Views/AdageViews/Blocks/LinkBlockView.cshtml">
       <publishTime>06/13/2019 16:50:30</publishTime>
@@ -615,6 +615,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/AdageViews/Blocks/StaffInfoItemBlockPreviewView.cshtml">
       <publishTime>06/13/2019 16:50:30</publishTime>
     </File>
+    <File Include="Views/AdageViews/Blocks/StaffInfoItemBlockView.cshtml">
+      <publishTime>06/13/2019 16:50:30</publishTime>
+    </File>
     <File Include="Views/AdageViews/Blocks/VideoBlockModalView.cshtml">
       <publishTime>06/13/2019 16:50:30</publishTime>
     </File>
@@ -625,7 +628,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 16:50:30</publishTime>
     </File>
     <File Include="Views/AdageViews/Pages/ContentPageView.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/14/2019 13:38:08</publishTime>
     </File>
     <File Include="Views/AdageViews/Pages/ErrorPageView.cshtml">
       <publishTime>06/13/2019 16:50:30</publishTime>
@@ -679,13 +682,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/13/2019 16:50:30</publishTime>
     </File>
     <File Include="Views/AdageViews/Shared/StaffInfoItem.cshtml">
-      <publishTime>06/13/2019 16:50:30</publishTime>
+      <publishTime>06/14/2019 13:34:20</publishTime>
     </File>
     <File Include="Views/ClientViews/Pages/ArticleDetailsPageView.cshtml">
-      <publishTime>06/14/2019 13:00:40</publishTime>
+      <publishTime>06/14/2019 13:18:13</publishTime>
     </File>
     <File Include="Views/ClientViews/Pages/EventDetailsPageView.cshtml">
-      <publishTime>06/14/2019 13:06:57</publishTime>
+      <publishTime>06/14/2019 13:09:51</publishTime>
     </File>
     <File Include="Views/ClientViews/ReadMe.txt">
       <publishTime>06/13/2019 16:50:30</publishTime>
