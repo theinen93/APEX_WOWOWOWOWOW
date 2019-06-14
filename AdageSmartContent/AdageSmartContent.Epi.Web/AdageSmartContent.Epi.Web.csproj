@@ -137,10 +137,6 @@
     <Reference Include="GatherContentConnect, Version=0.7.1.29749, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\GatherContentConnect.1.0.2\lib\net452\GatherContentConnect.dll</HintPath>
     </Reference>
-    <Reference Include="GatherContentImport, Version=1.0.6878.17101, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Libraries\GatherContentImport.dll</HintPath>
-    </Reference>
     <Reference Include="Geta.SEO.Sitemaps, Version=2.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Geta.SEO.Sitemaps.2.0.8\lib\net461\Geta.SEO.Sitemaps.dll</HintPath>
     </Reference>
@@ -421,13 +417,9 @@
       <Project>{c1ae7e26-9029-47dc-afd1-219decb7a8ae}</Project>
       <Name>AdageSmartContent.Epi.ViewModels</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EpiStarterKit.Epi.Models\ESK.Epi.Models.csproj">
-      <Project>{c65f9468-d83f-430e-9f6d-d9e16dfc0823}</Project>
-      <Name>ESK.Epi.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EpiStarterKit.Epi.ViewModels\ESK.Epi.ViewModels.csproj">
-      <Project>{9fd8db7c-47f0-407c-9d06-692c01991468}</Project>
-      <Name>ESK.Epi.ViewModels</Name>
+    <ProjectReference Include="..\GatherContentImport\GatherContentImport.csproj">
+      <Project>{4be3fb45-63d6-4455-86ff-54dba3d064fc}</Project>
+      <Name>GatherContentImport</Name>
     </ProjectReference>
   </ItemGroup>
   <ProjectExtensions>
